@@ -1,0 +1,78 @@
+<!--
+
+Component Name: Shopping List
+___________________________________
+
+Last Edited: 22/07/15
+Edited By: Dan Riddell @ 24 Digital
+Author URI: dan@24digital.com.au
+___________________________________
+
+DESCRIPTION:
+
+Simple formatted list so it makes it easy for printing
+
+Contains a modifier for colour items, as they need to include an inline div for their square of colour
+
+___________________________________
+
+-->
+
+
+<div class="shopping-list">
+
+	<ul class="shopping-list__print-items">
+	
+		<li class="shopping-list__item">
+				
+			<img src="" alt="" class="shopping-list__image">
+
+			<span class="shopping-list__item-title">Colour Name</span>
+
+			<span class="shopping-list__quantity">2 litres</span>
+
+		</li>
+
+		<li class="shopping-list__item shopping-list__item--colour">
+				
+			<div class="shopping-list__colour-swatch" style="background:$background-color;"></div>
+
+			<span class="shopping-list__item-title">Colour Name</span>
+
+			<span class="shopping-list__quantity">2 litres</span>
+
+		</li>
+
+	</ul>
+
+	<ul class="shopping-list__actions">
+		
+		<li class="shopping-list__action-item">
+			
+			<a href="" class="shopping-list__action-link shopping-list__action-link--print">
+				
+				<i class="fa"></i>
+
+				Print
+
+			</a>
+
+		</li>
+
+		<li class="shopping-list__action-item">
+			
+			<a href="" class="shopping-list__action-link shopping-list__action-link--sms">
+				
+				<i class="fa"></i>
+
+				SMS
+
+			</a>
+
+		</li>
+
+
+	</ul>
+
+</div>
+

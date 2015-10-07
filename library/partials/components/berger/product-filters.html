@@ -1,0 +1,75 @@
+<!--
+
+Component Name: Product Filters
+___________________________________
+
+Last Edited: 22/07/15
+Edited By: Dan Riddell @ 24 Digital
+Author URI: dan@24digital.com.au
+___________________________________
+
+DESCRIPTION:
+
+This should be located within the bootstrap accordion element (under partials/components/utilities)
+
+code provided below should be located between the panel-group tabs
+
+___________________________________
+
+-->
+
+<div class="panel panel-default">
+
+	<div class="panel-heading" role="tab" id="$accordion-name--heading_2">
+
+		<h4 class="panel-title">
+			
+			<a class="collapsed" role="button" data-toggle="collapse" data-parent="#$accordion" href="#$accordion-name--content_2" aria-expanded="false" aria-controls="$accordion-name--content_2">
+
+				Where to use
+
+				<i class="fa"></i>
+
+			</a>
+
+		</h4>
+
+	</div>
+
+	<div id="$accordion-name--content_2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="$accordion-name--heading_2">
+
+		<ul class="list-groups">
+
+			<li>
+
+				<input id="exterior" name="Exterior" type="checkbox" value="true">
+
+                <label for="exterior">Exterior</label>
+
+			</li>
+
+			<li>
+				
+				<input id="interior" name="Interior" type="checkbox" value="true">
+
+				<label for="interior">Interior</label>
+
+			</li>
+
+		</ul>
+
+		<span class="clear-filter">
+
+			<a href="#" class="clear-filter__link">
+
+				<i class="fa fa-close-circle"></i>
+
+				CLEAR
+
+			</a>
+
+		</span>
+
+	</div>
+
+</div>

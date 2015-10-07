@@ -1,0 +1,131 @@
+/*--------------------------------------------
+
+Global Styles
+
+--------------------------------------------
+
+Last Edited by: Tom Macready-Bryan @ 24 Digital
+Author URL: tom@24digital.com.au
+Edited Date: 25/08/15
+
+*/
+
+/*--------------------------------------------
+Button
+--------------------------------------------*/
+
+.btn-ghost {
+
+	color:#000;
+	border:1px solid #eff0eb;
+	transition:all linear 0.2s;
+	border-radius:0;
+	padding:15px 0;
+	font-size:20px;
+	text-transform:uppercase;
+
+	&:hover {
+
+		background:#eff0eb;
+
+	}
+
+}
+
+
+/*--------------------------------------------
+Page Header Partial
+--------------------------------------------*/
+
+.page-header {
+
+	border-bottom:0;
+
+	&__heading {
+
+		font-size:46px;
+		text-transform:uppercase;
+
+	}
+
+	&__description {
+
+		font-size:16px;
+		line-height:24px;
+		
+	}
+
+	&__image {
+
+		
+		
+	}
+
+}
+
+
+/*--------------------------------------------
+Accordion
+--------------------------------------------*/
+.panel-group {
+
+	.panel {
+
+		border-radius:0;
+		background:#eff0eb;
+		box-shadow:none;
+
+		.panel-heading {
+
+			position:relative;
+			padding:15px 12px;
+			background:#eff0eb;
+
+			h4 {
+
+				font-size:18px;
+
+			}
+
+			a {
+
+				&:hover {
+
+					text-decoration:none;
+
+				}
+
+			}
+
+			i {
+
+				position:absolute;
+				right:10px;
+				top:13px;
+				font-size:22px;
+
+			}
+
+		}
+
+	}
+
+	.panel-collapse {
+
+		.list-groups {
+
+			padding-left:20px;
+
+			li {
+
+				list-style-type:none;
+				margin-bottom:5px;
+
+			}
+
+		}
+
+
+	}
+
+}

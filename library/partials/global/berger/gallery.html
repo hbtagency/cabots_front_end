@@ -1,0 +1,92 @@
+<!--
+
+Component Name: Gallery
+___________________________________
+
+Last Edited: 29/07/15
+Edited By: Dan Riddell @ 24 Digital
+Author URI: dan@24digital.com.au
+___________________________________
+
+DESCRIPTION:
+
+Flexible gallery HTML for a variety of uses.
+
+SETTINGS:
+– "modal" whether the main image can open in a modal
+– "project buttons" whether or not add to project buttons are included
+– "pagination" whether we need to paginate
+– "Thumbnails" whether we need to add thumbnails under the main image
+
+___________________________________
+
+-->
+
+<div class="gallery">
+	
+	<div class="gallery__image-wrap">
+		
+		<a href="#" class="gallery__link" data-toggle="modal" data-target="#dg-modal">
+			
+			<img src="$sample.jpg" alt="" class="gallery__image">
+			
+		</a>
+
+		<div class="gallery__caption">
+			
+			<h4>Some sort of title</h4>
+			
+			<p>
+			  This would be a long -- or short -- description.
+			</p>
+
+		</div>
+
+		<!-- Include project actions here -->
+
+	</div>
+
+	<div class="gallery__pagination gallery__pagination--main">
+		
+		<a class="gallery__prev" href="#"></a>
+		<a class="gallery__next" href="#"></a>
+
+	</div>
+
+	<ul class="gallery__thumbnails">
+		
+		<li class="gallery__thumbnails-item">
+			
+			<a href="#" class="gallery__link">
+				
+				<img src="$sample.jpg" alt="" class="gallery__thumbnail">
+
+			</a>
+
+			<!-- Include project actions here -->
+
+		</li>
+
+
+		<li class="gallery__thumbnails-item">
+			
+			<a href="#" class="gallery__link">
+				
+				<img src="$sample.jpg" alt="" class="gallery__thumbnail">
+
+			</a>
+
+			<!-- Include project actions here -->
+
+		</li>
+
+	</ul>
+
+	<div class="gallery__pagination gallery__pagination--thumbnails">
+		
+		<a class="gallery__prev" href="#"></a>
+		<a class="gallery__next" href="#"></a>
+
+	</div>
+
+</div>

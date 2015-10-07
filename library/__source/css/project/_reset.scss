@@ -1,0 +1,32 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30/09/2015, 11:54:38 AM
+    Author     : Nathan Zhang
+*/
+
+/* Reset */
+a:hover{text-decoration: none;}
+img{display: block;margin: 0px;}
+ul{
+    margin:0px;padding:0px;
+    li{
+        list-style: none;
+        margin: 0px;
+        padding:0px;
+    }
+}
+body{overflow: hidden;}
+
+.navbar-nav{
+    li{
+        a{
+            &:hover,&:focus{
+                background-color: transparent;
+            }
+        }
+    }
+}

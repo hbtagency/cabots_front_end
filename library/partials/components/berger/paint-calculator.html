@@ -1,0 +1,156 @@
+<!--
+
+Component Name: Paint Calculator
+___________________________________
+
+Last Edited: 21/07/15
+Edited By: Dan Riddell @ 24 Digital
+Author URI: dan@24digital.com.au
+___________________________________
+
+DESCRIPTION:
+
+- Generic Paint calculator to bring up paint results
+- Can be used in multiple contexts with the modifier (-/-modal, -/-inline, etc)
+- Be sure to follow the markup. Col's have been removed to insure an adequate amount of decoupling from styling
+
+___________________________________
+
+-->
+
+<div class="paint-calculator paint-calculator--modal">
+
+	
+	<span class="paint-calculator__title">Paint Calculator</span>
+
+	<i class="fa fa-times paint-calculator__close"></i>
+
+	
+	<div class="paint-calculator__paint-form">
+		
+		<ul class="paint-calculator__paint-context">
+			
+			<li class="paint-calculator__context-item">
+				
+				
+				<a href="#" class="paint-calculator__context-link">
+					
+					<img src="image.jpg" alt="" class="paint-calulator__context-image">
+
+					<span class="paint-calculator__context-title">$interior/exterior/etc</span>
+
+				</a>
+
+
+			</li>
+
+			<li class="paint-calculator__context-item--selected">
+
+				
+				<a href="#" class="paint-calculator__context-link">
+					
+					<img src="image.jpg" alt="" class="paint-calulator__context-image">
+
+					<span class="paint-calculator__context-title">$interior/exterior/etc</span>
+
+				</a>
+
+
+			</li>
+
+		</ul>
+
+		<span class="paint-calculator__fields-title">Tell Us More About where you are painting.</span>
+
+		<ul class="paint-calculator__fields">
+			
+			<li class="paint-calculator__field-item paint-calculator__field-item--interior">
+				
+				
+				<label for="field1" class="paint-calculator__label">$field-title</label>
+				
+				<input type="text" id="field1" class="paint-calculator__field--text" />
+
+
+			</li>
+
+			<li class="paint-calculator__field-item paint-calculator__field-item--exterior">
+				
+				
+				<label for="field2" class="paint-calculator__label">$field-title</label>
+				
+				<select name="field2" id="field2" class="paint-calculator__field--select">
+					
+					
+					<option value="1">1</option>
+
+					<option value="2">1</option>
+
+
+				</select>
+
+
+			</li>
+
+			<li class="paint-calculator__field-item">
+			
+				
+				<button class="paint-calculator__field--button">Calculate</button>
+
+		
+			</li>
+
+		</ul>
+
+	</div>
+
+
+	<div class="paint-calculator__results">
+		
+		<div class="paint-calculator__total-results">
+			
+			
+			<span class="paint-calculator__results-intro">British Paints estimates that you will require:</span>
+
+			<span class="paint-calculator__results-litres">27</span>
+
+			<span class="paint-calculator__results-outro">Litres of Paint</span>
+
+
+		</div>
+
+		<ul class="paint-calculator__itemised-results">
+			
+			<li class="paint-calculator__result-item">
+				
+				
+				<span class="paint-calculator__itemised-label">Broadwall (L):</span>
+
+				<span class="paint-calculator__itemised-value">5</span>
+
+
+			</li>
+
+			<li class="paint-calculator__result-item paint-calculator__result-item--empty">
+				
+				
+				<span class="paint-calculator__itemised-label">Doors/Windows/Trim (L):</span>
+
+				<span class="paint-calculator__itemised-value">-</span>
+
+
+			</li>
+
+		</ul>
+
+	</div>
+
+
+	<div class="paint-calculator--disclaimer">
+		
+		Long text
+
+	</div>
+
+
+</div>

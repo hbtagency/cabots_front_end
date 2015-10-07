@@ -1,0 +1,69 @@
+<!--
+
+Component Name: Navigation
+___________________________________
+
+Last Edited: 24/06/15
+Edited By: Dan Riddell @ 24 Digital
+Author URI: dan@24digital.com.au
+___________________________________
+
+DESCRIPTION:
+
+Component used for all Navigation across Dulux Framework.
+
+Exhaustive list so far:
++	Top navigation
++	Main navigation
++	Footer Quicklinks
++	Footer Navigation
+
+___________________________________
+
+-->
+
+<nav class="navbar">
+
+		<ul id="$navigation-type" class="nav navbar-nav level-1">
+
+			<li class="active dropdown navbar--list-item">
+
+				<!-- Link tag only if link is present in backend -->
+				<a class="dropdown-toggle menu--link" href="$link">
+					
+					<!-- Control to use: -->
+						<img src="$source" alt="$alt" />
+						<!-- AND / OR -->
+						<i class="icon menu--icon $icon--type"></i>
+					<!-- END IF -->
+
+					<span class="menu--link-text current-parent">$text</span>
+
+				</a>
+
+				<!-- Second level Nav Item -->
+				<ul class="dropdown-menu dropdown--list level-2 current-ancestor">
+					
+					<li class="navbar--list-item">
+						<a class="menu--link" href="$link">
+							<span class="menu--link-text current-page">$text</span>
+						</a>
+					</li>
+
+					<li class="navbar--list-item">
+						<a class="menu--link" href="$link">
+							<span class="menu--link-text">$text</span>
+						</a>
+					</li>
+
+				</ul>
+
+			</li>
+
+		</ul>
+
+</nav>
+
+<div class="target">
+	<!-- Load Submenu in here -->
+</div>

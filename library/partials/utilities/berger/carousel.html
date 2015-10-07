@@ -1,0 +1,65 @@
+<!--
+
+Component Name: Carousel
+___________________________________
+
+Last Edited: 24/06/15
+Edited By: Dan Riddell @ 24 Digital
+Author URI: dan@24digital.com.au
+___________________________________
+
+DESCRIPTION:
+
+Contains three layouts:
+Slide 1.  	Simple image slide
+Slide 2. 	Background image w/ Text and Buttons overlayed
+Slide 3. 	Video Slide
+
+The carousel is configurable. Refer to documentation for compiled html
+
+slick documentation:
+http://kenwheeler.github.io/slick/
+
+___________________________________
+
+-->
+
+<div class="slick carousel">
+
+	<div class="carousel--slide image-slide slide-1">
+		
+		<!-- render link tag if link supplied -->
+		<a class="slide--link" href="$link">
+			<img src="$image" alt="">
+		</a>
+		
+		
+	</div>
+
+	<div class="carousel--slide text-slide slide-2">
+		
+		<img src="$image" alt="">
+
+		<div class="slide--content" style="top:$top_position;left:$left_position;">
+		
+			<h1 class="heading slide--heading" style="color:$colour1">$title</h1>
+			<p class="slide--text" style="color:$colour1">$content</p>
+			<button class="button slide--button">
+				<a class="slide--link" href="$link">$button_text</a>
+			</button>
+
+		</div>
+		
+	</div>
+
+	<div class="carousel--slide video-slide slide-3">
+
+		<div class="embed-responsive $video-ratio">
+		
+			<iframe class="embed-responsive-item slide--video" src="$video_source" ></iframe>
+
+		</div>
+
+	</div>
+
+</div>

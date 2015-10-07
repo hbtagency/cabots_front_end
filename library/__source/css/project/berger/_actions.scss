@@ -1,0 +1,78 @@
+.project-buttons {
+
+	position: relative;
+
+	&__subactions {
+
+		display:none;
+		position: absolute;
+		top: 35px;
+		left: -104px;
+		background: white;
+		padding: 10px;
+		width:225px;
+		background:#eff0eb;
+		z-index:100;
+
+		a {
+
+			color:#000;
+			text-decoration:none;
+
+		}
+
+		&:after {
+
+			content:'';
+			display:block;
+			width: 0; 
+			height: 0; 
+			position:absolute;
+			top:-15px;
+			left:100px;
+			border-left: 15px solid transparent;
+			border-right: 15px solid transparent;
+			border-bottom: 15px solid #eff0eb;
+
+		}
+
+	}
+
+	&__subactions-item {
+		width:100%;
+		display:block;
+		text-align:center;
+		font-size:12px;
+		background:#fff;
+		padding:8px 0;
+		margin:4px 0;
+	}
+
+	&__subactions-heading {
+		width:100%;
+		display:block;
+		text-transform:uppercase;
+		text-align:center;
+		font-size:12px;
+		margin:2px 0;
+	}
+
+	&__link {
+
+		&:hover + .project-buttons__subactions {
+			display: block;
+		}
+
+	}
+
+	&:hover {
+
+		.project-buttons__subactions {
+
+			display:block;
+
+		}
+
+	}
+
+}

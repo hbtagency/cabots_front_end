@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+<h2 id="author:danielriddell">Author: Daniel Riddell</h2>
+
+<h2 id="authoruri:dan24digital.com.au">Author URI: dan@24digital.com.au</h2>
+
+<h2 id="version:1.1">Version: 1.1</h2>
+
+<h2 id="lastedited:280915">Last Edited: 28/09/15</h2>
+
+<p>/&#8212;&#8212;&#8211;/&#8212;&#8212;&#8211;/&#8212;&#8212;&#8211;/</p>
+
+<h2 id="gettingstarted">Getting started</h2>
+
+<p>/&#8212;&#8212;&#8211;/&#8212;&#8212;&#8211;/&#8212;&#8212;&#8211;/</p>
+
+<ol>
+<li><p>Open terminal, and jump into the root of this project</p></li>
+<li><p>Install Ruby </p>
+
+<p>Head over to &#8216;https://www.ruby-lang.org/en/documentation/installation/&#8217; to find your operating system instructions</p></li>
+<li><p>Install Grunt</p>
+
+<p>&#8216;npm install -g grunt-cli&#8217;</p></li>
+<li><p>Install Sass-globbing (note the version number, the latest version is corrupt – Sept 2015)</p>
+
+<p>&#8216;gem install sass-globbing -v 1.1.0&#8217;</p></li>
+<li><p>Run &#8216;npm install&#8217; to make sure you have all required components installed</p></li>
+<li><p>Run &#8216;grunt&#8217; from the terminal to concatenate and compile all CSS and JS in the project</p></li>
+</ol>
+
+<p>/&#8212;&#8212;&#8211;/&#8212;&#8212;&#8211;/&#8212;&#8212;&#8211;/</p>
+
+<h2 id="overview">Overview</h2>
+
+<p>/&#8212;&#8212;&#8211;/&#8212;&#8212;&#8211;/&#8212;&#8212;&#8211;/</p>
+
+<p>The HTML (markup) is setup into components, located in the &#8216;library/partials&#8217; folder.</p>
+
+<p>Each component&#8217;s HTML is not to be modified.</p>
+
+<p>The corresponding SCSS should be located in the &#8216;library/__source/css/project&#8217; folder, which will compile automatically into Grunt, after the vendor files (and in alphebetical order)</p>
+
+<p>Any third party CSS or JS should be loaded through bower (where possible), otherwise they should exists in the corresponding third-party folders under JS and CSS.</p>
+
+<p>/&#8212;&#8212;&#8211;/&#8212;&#8212;&#8211;/&#8212;&#8212;&#8211;/</p>
+
+<h2 id="examples">Examples</h2>
+
+<p>/&#8212;&#8212;&#8211;/&#8212;&#8212;&#8211;/&#8212;&#8212;&#8211;/</p>
+
+<p>A few examples exist in the root of this project.</p>
+
+<p>The best examples have the components outlaid at the top of the html file in a html comment. These are:
+&#8211; my-projects.html
+&#8211; products-archive.html
+&#8211; colour-single.html
+&#8211; colour-chart.html</p>
+
+</body>
+</html>

@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dulux Frontend Framework Example</title>
+	<link rel="stylesheet" href="/library/build/css/_DG.min.css">
+	<link rel="stylesheet" href="/library/__source/bower_components/slick-carousel/slick/slick-theme.css">
+</head>
+<body class="home">
+
+<div id="top-menu" class="container-fluid">
+
+	<div class="row">
+
+		<div class="col-xs-12 col-md-4 pull-right">
+			
+			<nav class="navbar navbar-top">
+
+				<ul class="nav navbar-nav level-1">
+
+					<li class="navbar--list-item">
+
+						<!-- Link tag only if link is present in backend -->
+						<a class="menu--link" href="$link">
+
+							<i class="fa fa-paint-brush"></i>
+
+							<span class="menu--link-text current-parent">
+								My Projects 
+								<span class="menu--link-text-counter">(1)</span>
+							</span>
+
+						</a>
+
+					</li>
+
+					<li class="navbar--list-item">
+
+						<!-- Link tag only if link is present in backend -->
+						<a class="menu--link" href="$link">
+
+							<i class="fa fa-map-marker"></i>
+
+							<span class="menu--link-text current-parent">
+								Store Locator
+							</span>
+
+						</a>
+
+					</li>
+
+					<li class="navbar--list-item navbar--list-item-search">
+
+						<!-- Link tag only if link is present in backend -->
+						<div class="search-form">
+
+							<i class="icon search-form--icon $icon--type"></i>
+
+							<span class="search-form--text">Search</span>
+							
+							<div class="input-group search-form--wrapper">
+
+								<input class="search-form--input form-control" type="text" />
+								
+								<span class="input-group-btn">
+							     
+							        <button class="btn btn-default" type="button">Search</button>
+
+								</span>
+
+							</div>
+
+						</div>
+
+					</li>
+
+
+				</ul>
+
+			</nav>
+
+		</div>
+		
+	</div>
+
+</div>
+
+<div class="container">
+
+	<div class="row">
+
+		<div class="col-xs-12 col-md-3">
+			
+			<div class="site__logo site__logo--header">
+				
+				<a href="#" class="logo__link">
+					<img src="./example/logo.png" alt="">
+				</a>
+
+			</div>
+
+		</div>
+		
+		<div class="col-xs-12 col-md-9">
+	
+			<nav class="navbar navbar-main">
+
+				<ul id="main-menu" class="nav navbar-nav level-1">
+
+					<li class="dropdown navbar--list-item">
+
+						<!-- Link tag only if link is present in backend -->
+						<a class="dropdown-toggle menu--link" href="$link">
+
+							<span class="menu--link-text current-parent">Colour Chart</span>
+
+						</a>
+
+						<!-- Second level Nav Item -->
+						<ul class="dropdown-menu dropdown--list level-2">
+							
+							<li class="navbar--list-item">
+								<a class="menu--link" href="$link">
+									<span class="menu--link-text">Berger</span>
+								</a>
+							</li>
+
+							<li class="navbar--list-item">
+								<a class="menu--link" href="$link">
+									<span class="menu--link-text">Jet Dry</span>
+								</a>
+							</li>
+
+							<li class="navbar--list-item">
+								<a class="menu--link" href="$link">
+									<span class="menu--link-text">Colour Bond</span>
+								</a>
+							</li>
+
+						</ul>
+
+					</li>
+
+					<li class="dropdown navbar--list-item">
+
+						<!-- Link tag only if link is present in backend -->
+						<a class="dropdown-toggle menu--link" href="$link">
+
+							<span class="menu--link-text current-parent">Products</span>
+
+						</a>
+
+						<!-- Second level Nav Item -->
+						<ul class="dropdown-menu dropdown--list level-2">
+
+							<li class="dropdown navbar--list-item">
+
+								<!-- Link tag only if link is present in backend -->
+								<span class="menu--link-text">Berger</span>
+
+								<ul class="dropdown-menu dropdown--list level-3">
+							
+									<li class="navbar--list-item">
+										<a class="menu--link" href="$link">
+											<span class="menu--link-text">Exterior</span>
+										</a>
+									</li>
+
+									<li class="navbar--list-item">
+										<a class="menu--link" href="$link">
+											<span class="menu--link-text">Interior</span>
+										</a>
+									</li>
+
+									<li class="navbar--list-item">
+										<a class="menu--link" href="$link">
+											<span class="menu--link-text">Enamels</span>
+										</a>
+									</li>
+
+									<li class="navbar--list-item">
+										<a class="menu--link" href="$link">
+											<span class="menu--link-text">Prep</span>
+										</a>
+									</li>
+
+								</ul>
+
+							</li>
+
+						</ul>
+
+						<!-- Second level Nav Item -->
+						<ul class="dropdown-menu dropdown--list level-2">
+
+							<li class="dropdown navbar--list-item">
+
+								<!-- Link tag only if link is present in backend -->
+								<span class="menu--link-text">Berger Jet Dry</span>
+
+								<ul class="dropdown-menu dropdown--list level-3">
+							
+									<li class="navbar--list-item">
+										<a class="menu--link" href="$link">
+											<span class="menu--link-text">Concrete</span>
+										</a>
+									</li>
+
+									<li class="navbar--list-item">
+										<a class="menu--link" href="$link">
+											<span class="menu--link-text">Paving</span>
+										</a>
+									</li>
+
+									<li class="navbar--list-item">
+										<a class="menu--link" href="$link">
+											<span class="menu--link-text">Natural Stone</span>
+										</a>
+									</li>
+
+								</ul>
+
+							</li>
+
+						</ul>
+
+					</li>
+
+					<li class="dropdown navbar--list-item">
+
+						<!-- Link tag only if link is present in backend -->
+						<a class="dropdown-toggle menu--link" href="$link">
+
+							<span class="menu--link-text current-parent">Inspiration</span>
+
+						</a>
+
+					</li>
+
+					<li class="dropdown navbar--list-item">
+
+						<!-- Link tag only if link is present in backend -->
+						<a class="dropdown-toggle menu--link" href="$link">
+
+							<span class="menu--link-text current-parent">How-to &amp; DIY</span>
+
+						</a>
+
+					</li>
+
+					<li class="dropdown navbar--list-item">
+
+						<!-- Link tag only if link is present in backend -->
+						<a class="dropdown-toggle menu--link" href="$link">
+
+							<span class="menu--link-text current-parent">Paint For a Mate</span>
+
+						</a>
+
+					</li>
+
+				</ul>
+
+			</nav>
+
+		</div> <!-- end col -->
+
+	</div> <!-- end Row -->
+
+</div> <!-- end cont. -->
+
+<div class="container">
+
+	<div class="row">
+
+		<div class="col-xs-12">
+
+			<ol class="breadcrumb">
+					
+					<li>
+						<a class="breadcrumb--link" href="/">
+							Home
+						</a>
+					</li>
+
+					<li class="active">
+						The Current Page
+					</li>
+
+				</ol>
+
+		</div>
+
+	</div> <!-- End Row -->
+
+</div>
+
+<div class="container-fluid">
+
+	<div class="row">
+
+		<div class="slick carousel" data-slick='{"adaptiveHeight":true}'>
+
+			<div class="carousel--slide image-slide slide-1">
+				
+				<!-- render link tag if link supplied -->
+				<a class="slide--link" href="#">
+					<img src="example/rocks.jpg" alt="">
+				</a>
+				
+				
+			</div>
+
+			<div class="carousel--slide text-slide slide-2">
+				
+				<img src="example/rocks.jpg" alt="">
+
+				<div class="slide--content" style="top:25%;left:25%;">
+				
+					<h1 class="heading slide--heading" style="color:white">Rocks Image</h1>
+					<p class="slide--text" style="color:white">A caption about these rocks.</p>
+					<button class="button slide--button">
+						<a class="slide--link" href="#">Call to Action!</a>
+					</button>
+
+				</div>
+				
+			</div>
+
+			<div class="carousel--slide video-slide slide-3">
+
+				<div class="embed-responsive embed-responsive-16by9">
+				
+					<iframe class="embed-responsive-item slide--video" src="https://www.youtube.com/embed/FYfuI2uZLmg" ></iframe>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<div class="container">
+
+	<div class="row">
+
+		<div class="col-xs-12 col-md-4">
+			
+			<div class="quicklink" data-colour="[$colour1,$colour2]">
+
+				<img class="quicklink--image" src="example/square.jpg" alt="">
+
+				<div class="title quicklink--title">
+
+					<a class="quicklink--link" href="$link">
+						Call to Action One		
+					</a>	
+
+				</div>
+
+				<p class="caption quicklink--caption">
+					Lipsum	
+				</p>
+
+				<a class="quicklink--link" href="$link">
+					<button class="button quicklink--button">
+						Link One
+					</button>
+				</a>
+
+			</div>
+
+		</div>
+
+		<div class="col-xs-12 col-md-4">
+			
+			<div class="quicklink" data-colour="[$colour1,$colour2]">
+
+				<img class="quicklink--image" src="example/square.jpg" alt="">
+
+				<div class="title quicklink--title">
+
+					<a class="quicklink--link" href="$link">
+						Call to Action Two		
+					</a>	
+
+				</div>
+
+				<p class="caption quicklink--caption">
+					Lipsum	
+				</p>
+
+				<a class="quicklink--link" href="$link">
+					<button class="button quicklink--button">
+						Link Two
+					</button>
+				</a>
+
+			</div>
+
+		</div>
+
+		<div class="col-xs-12 col-md-4">
+			
+			<div class="social-links">
+	
+				<span class="title social-links--title">
+					Get social with us.	
+				</span>
+
+				<ul class="list-inline social-links--list">
+					<li class="social-links--list-item">
+						<a class="social-links--link" href="/">
+							<i class="fa fa-facebook"></i>	
+							<!-- Optional: -->
+							 
+						</a>
+					</li>
+					<li class="social-links--list-item">
+						<a class="social-links--link" href="/">
+							<i class="fa fa-twitter-square"></i>	
+							<!-- Optional: -->
+							
+						</a>
+					</li>
+				</ul>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<div class="container">
+	
+	<hr>
+
+</div>
+
+<div class="container">
+
+	<div class="row">
+
+		<div class="col-xs-12">
+
+			<h3 class="heading">Search</h3>
+
+		</div>
+
+	</div>
+
+	<div class="row">
+	
+		<div class="col-md-4 col-xs-12">
+
+			<div class="search-form">
+
+				<i class="icon search-form--icon $icon--type"></i>
+
+				<span class="search-form--text">Search</span>
+				
+				<div class="input-group search-form--wrapper">
+
+					<input class="form-control" type="text" />
+					
+					<span class="input-group-btn">
+				     
+				        <button class="btn btn-default" type="button">Search</button>
+
+					</span>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="col-md-4 col-xs-12">
+
+			<div class="search-results--group $search-group">
+
+				<span class="title search-results-group--title">Paint Products</span>
+
+				<ul class="list-group search-results--list $type-flag">
+					
+					<!-- Load Background Colour if swatch -->
+					<li class="list-group-item" style="background-color:$color">
+						
+						<!-- Load image if present -->
+						<img class="search-results--image" src="example/bp-inone-ceiling-f-w-4lt.png" alt="Paint">
+
+						<span class="title search-results--product-title">Product #1</span>
+
+					</li>
+
+				</ul>
+				
+			</div>
+
+		</div>
+
+		<div class="col-md-4 col-xs-12">
+
+			<div class="search-results--group $search-group">
+
+				<span class="title search-results-group--title">Colour</span>
+
+				<ul class="list-group search-results--list $type-flag">
+					
+					<!-- Load Background Colour if swatch -->
+					<li class="list-group-item" style="background-color:#FEA0A0;">
+
+						<span class="title search-results--product-title">Pink</span>
+
+					</li>
+
+					<!-- Load Background Colour if swatch -->
+					<li class="list-group-item" style="background-color:#55ABDC;">
+
+						<span class="title search-results--product-title">Blue</span>
+
+					</li>
+
+					<!-- Load Background Colour if swatch -->
+					<li class="list-group-item" style="background-color:#685279;">
+
+						<span class="title search-results--product-title">Purple</span>
+
+					</li>
+
+				</ul>
+				
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<div class="footer">
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-xs-12 col-md-3">
+				
+				<div class="site__logo site__logo--footer">
+					
+					<a href="#" class="logo__link">
+						<img src="./example/logo.png" alt="">
+					</a>
+
+				</div>
+
+			</div>
+			
+			<div class="col-xs-12 col-md-9">
+
+				<div class="row">
+
+					<div class="col-xs-12 col-md-3">
+				
+						<nav class="navbar navbar--footer">
+
+							<h4 class="navbar--heading">About Us</h4>
+
+							<ul id="$navigation-type" class="nav navbar-nav level-1">
+
+								<li class="active dropdown navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Paint For a Mate</span>
+
+									</a>
+
+								</li>
+
+								<li class="navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Colour Accuracy</span>
+
+									</a>
+
+								</li>
+
+								<li class="navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Contact Us</span>
+
+									</a>
+
+								</li>
+
+								<li class="navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Terms &amp; Conditions</span>
+
+									</a>
+
+								</li>
+
+								<li class="navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Privacy Policy</span>
+
+									</a>
+
+								</li>
+
+							</ul>
+
+						</nav>
+
+					</div>
+
+					<div class="col-xs-12 col-md-3">
+				
+						<nav class="navbar navbar--footer">
+
+							<h4 class="navbar--heading">Products</h4>
+
+							<ul id="$navigation-type" class="nav navbar-nav level-1">
+
+								<li class="active dropdown navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Interior</span>
+
+									</a>
+
+								</li>
+
+								<li class="navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Exterior</span>
+
+									</a>
+
+								</li>
+
+								<li class="navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Concrete &amp; Paving</span>
+
+									</a>
+
+								</li>
+
+								<li class="navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Natural Stone</span>
+
+									</a>
+
+								</li>
+
+								<li class="navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Berger Jet Dry</span>
+
+									</a>
+
+								</li>
+
+							</ul>
+
+						</nav>
+
+					</div>
+
+					<div class="col-xs-12 col-md-3">
+				
+						<nav class="navbar navbar--footer">
+
+							<h4 class="navbar--heading">Colour</h4>
+
+							<ul id="$navigation-type" class="nav navbar-nav level-1">
+
+								<li class="active dropdown navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Colour Chart</span>
+
+									</a>
+
+								</li>
+
+								<li class="navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Colourbond</span>
+
+									</a>
+
+								</li>
+
+								<li class="navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Concrete Colours</span>
+
+									</a>
+
+								</li>
+
+							</ul>
+
+						</nav>
+
+					</div>
+
+					<div class="col-xs-12 col-md-3">
+				
+						<nav class="navbar navbar--footer">
+
+							<h4 class="navbar--heading">How-To</h4>
+
+							<ul id="$navigation-type" class="nav navbar-nav level-1">
+
+								<li class="active dropdown navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Inspiration</span>
+
+									</a>
+
+								</li>
+
+								<li class="navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Paint Calculator</span>
+
+									</a>
+
+								</li>
+
+								<li class="navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Home Team</span>
+
+									</a>
+
+								</li>
+
+							</ul>
+
+						</nav>
+
+					</div>					
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<script type="text/javascript" src="/library/build/js/_DG.min.js"></script>
+	
+</body>
+</html>

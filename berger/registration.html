@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dulux Frontend Framework Example</title>
+	<link rel="stylesheet" href="/library/build/css/_DG.min.css">
+	<link rel="stylesheet" href="/library/__source/bower_components/slick-carousel/slick/slick-theme.css">
+</head>
+<body class="home">
+
+<div id="top-menu" class="container-fluid">
+
+	<div class="row">
+
+		<div class="col-xs-12 col-md-4 pull-right">
+
+			<nav class="navbar navbar-top">
+
+				<ul class="nav navbar-nav level-1">
+
+					<li class="navbar--list-item">
+
+						<!-- Link tag only if link is present in backend -->
+						<a class="menu--link" href="$link">
+
+							<i class="fa fa-paint-brush"></i>
+
+							<span class="menu--link-text current-parent">
+								My Projects 
+								<span class="menu--link-text-counter">(1)</span>
+							</span>
+
+						</a>
+
+					</li>
+
+					<li class="navbar--list-item">
+
+						<!-- Link tag only if link is present in backend -->
+						<a class="menu--link" href="$link">
+
+							<i class="fa fa-map-marker"></i>
+
+							<span class="menu--link-text current-parent">
+								Store Locator
+							</span>
+
+						</a>
+
+					</li>
+
+					<li class="navbar--list-item navbar--list-item-search">
+
+						<!-- Link tag only if link is present in backend -->
+						<div class="search-form">
+
+							<i class="icon search-form--icon $icon--type"></i>
+
+							<span class="search-form--text">Search</span>
+
+							<div class="input-group search-form--wrapper">
+
+								<input class="search-form--input form-control" type="text" />
+								
+								<span class="input-group-btn">
+							     
+							        <button class="btn btn-default" type="button">Search</button>
+
+								</span>
+
+							</div>
+
+						</div>
+
+					</li>
+
+
+				</ul>
+
+			</nav>
+
+		</div>
+
+	</div>
+
+</div>
+
+<div class="container">
+
+	<div class="row">
+
+		<div class="col-xs-12 col-md-3">
+
+			<div class="site__logo site__logo--header">
+
+				<a href="#" class="logo__link">
+					<img src="./example/logo.png" alt="">
+				</a>
+
+			</div>
+
+		</div>
+
+		<div class="col-xs-12 col-md-9">
+
+			<nav class="navbar navbar-main">
+
+				<ul id="main-menu" class="nav navbar-nav level-1">
+
+					<li class="dropdown navbar--list-item">
+
+						<!-- Link tag only if link is present in backend -->
+						<a class="dropdown-toggle menu--link" href="$link">
+
+							<span class="menu--link-text current-parent">Colour Chart</span>
+
+						</a>
+
+						<!-- Second level Nav Item -->
+						<ul class="dropdown-menu dropdown--list level-2">
+
+							<li class="navbar--list-item">
+								<a class="menu--link" href="$link">
+									<span class="menu--link-text">Berger</span>
+								</a>
+							</li>
+
+							<li class="navbar--list-item">
+								<a class="menu--link" href="$link">
+									<span class="menu--link-text">Jet Dry</span>
+								</a>
+							</li>
+
+							<li class="navbar--list-item">
+								<a class="menu--link" href="$link">
+									<span class="menu--link-text">Colour Bond</span>
+								</a>
+							</li>
+
+						</ul>
+
+					</li>
+
+					<li class="dropdown navbar--list-item">
+
+						<!-- Link tag only if link is present in backend -->
+						<a class="dropdown-toggle menu--link" href="$link">
+
+							<span class="menu--link-text current-parent">Products</span>
+
+						</a>
+
+						<!-- Second level Nav Item -->
+						<ul class="dropdown-menu dropdown--list level-2">
+
+							<li class="dropdown navbar--list-item">
+
+								<!-- Link tag only if link is present in backend -->
+								<span class="menu--link-text">Berger</span>
+
+								<ul class="dropdown-menu dropdown--list level-3">
+
+									<li class="navbar--list-item">
+										<a class="menu--link" href="$link">
+											<span class="menu--link-text">Exterior</span>
+										</a>
+									</li>
+
+									<li class="navbar--list-item">
+										<a class="menu--link" href="$link">
+											<span class="menu--link-text">Interior</span>
+										</a>
+									</li>
+
+									<li class="navbar--list-item">
+										<a class="menu--link" href="$link">
+											<span class="menu--link-text">Enamels</span>
+										</a>
+									</li>
+
+									<li class="navbar--list-item">
+										<a class="menu--link" href="$link">
+											<span class="menu--link-text">Prep</span>
+										</a>
+									</li>
+
+								</ul>
+
+							</li>
+
+						</ul>
+
+						<!-- Second level Nav Item -->
+						<ul class="dropdown-menu dropdown--list level-2">
+
+							<li class="dropdown navbar--list-item">
+
+								<!-- Link tag only if link is present in backend -->
+								<span class="menu--link-text">Berger Jet Dry</span>
+
+								<ul class="dropdown-menu dropdown--list level-3">
+
+									<li class="navbar--list-item">
+										<a class="menu--link" href="$link">
+											<span class="menu--link-text">Concrete</span>
+										</a>
+									</li>
+
+									<li class="navbar--list-item">
+										<a class="menu--link" href="$link">
+											<span class="menu--link-text">Paving</span>
+										</a>
+									</li>
+
+									<li class="navbar--list-item">
+										<a class="menu--link" href="$link">
+											<span class="menu--link-text">Natural Stone</span>
+										</a>
+									</li>
+
+								</ul>
+
+							</li>
+
+						</ul>
+
+					</li>
+
+					<li class="dropdown navbar--list-item">
+
+						<!-- Link tag only if link is present in backend -->
+						<a class="dropdown-toggle menu--link" href="$link">
+
+							<span class="menu--link-text current-parent">Inspiration</span>
+
+						</a>
+
+					</li>
+
+					<li class="dropdown navbar--list-item">
+
+						<!-- Link tag only if link is present in backend -->
+						<a class="dropdown-toggle menu--link" href="$link">
+
+							<span class="menu--link-text current-parent">How-to &amp; DIY</span>
+
+						</a>
+
+					</li>
+
+					<li class="dropdown navbar--list-item">
+
+						<!-- Link tag only if link is present in backend -->
+						<a class="dropdown-toggle menu--link" href="$link">
+
+							<span class="menu--link-text current-parent">Paint For a Mate</span>
+
+						</a>
+
+					</li>
+
+				</ul>
+
+			</nav>
+
+		</div> <!-- end col -->
+
+	</div> <!-- end Row -->
+
+</div> <!-- end cont. -->
+
+<div class="container">
+
+	<div class="row">
+
+		<div class="col-xs-12">
+
+			<ol class="breadcrumb">
+
+				<li>
+					<a class="breadcrumb--link" href="/">
+						Home
+					</a>
+				</li>
+
+				<li class="active">
+					Account
+				</li>
+
+			</ol>
+
+		</div>
+
+	</div> <!-- End Row -->
+
+</div>
+
+<div class="container">
+
+	<div class="row">
+
+		<div class="col-xs-12 col-md-2"></div>
+
+		<div class="col-xs-12 col-md-8">
+
+			<div class="create-account">
+
+				<ul class="login__actions--top">
+					<li class="login__actions-item">
+
+						<p>Already Registered?</p>
+						<a href="/register" class="login__action-link login__action-link--register"> Login here.</a>
+
+					</li>
+				</ul>
+
+				<span class="create-account__title col-md-12">REGISTER</span>
+				<span class="create-account__subtitle col-md-12">Create an account to save colours, products and more for future reference. To set up your Account, simply use your email address to create a personal login.</span>
+
+				<ul class="create-account__fields">
+
+					<li class="create-account__field-item create-account__field-item--required col-md-6">
+
+						<label for="firstname" class="create-account__label">First Name:</label>
+						<input type="text" class="create-account__field create-account__field--text" id="firstname" name="firstname" placeholder="Email">
+
+					</li>
+
+					<li class="create-account__field-item create-account__field-item--required col-md-6">
+
+						<label for="lastname" class="create-account__label">Last Name:</label>
+						<input type="text" class="create-account__field create-account__field--text" id="lastname" name="lastname" placeholder="Email">
+
+					</li>
+
+					<li class="create-account__field-item create-account__field-item--required col-md-12">
+
+						<label for="username" class="create-account__label">Email Address:</label>
+						<input type="text" class="create-account__field create-account__field--text" id="username" name="username" placeholder="Email">
+
+					</li>
+
+					<li class="create-account__field-item create-account__field-item--required col-md-12">
+
+						<label for="password" class="create-account__label">Password:</label>
+						<input type="password" class="create-account__field create-account__field--password" id="password" placeholder="Password">
+
+					</li>
+
+					<li class="create-account__field-item create-account__field-item--required col-md-12">
+
+						<label for="password-confirm" class="create-account__label">Confirm your Password:</label>
+						<input type="password" class="create-account__field create-account__field--password" id="password-confirm" placeholder="Password">
+
+					</li>
+
+					<li class="create-account__field-item create-account__field-item--checkbox create-account__field-item--required col-md-12">
+
+						<input type="checkbox" class="create-account__field create-account__field--checkbox" id="subscribe">
+						<p>Please send me information on Berger promotions and products (by selecting YES you agree to being contacted by email or post using the contact details provided)</p>
+
+					</li>
+
+					<li class="create-account__field-item--submit col-md-6">
+
+						<button class="create-account__field create-account__field--button">Create Account</button>
+
+					</li>
+
+				</ul>
+
+				<div class="col-md-12">
+				<hr>
+				<p><strong>Privacy statement</strong></p>
+				<p>Berger is a division of DuluxGroup (Australia) Pty Limited (ACN 000 049 427) (“Berger”). The terms "we", "us", "our" refer to the company and any of our affiliated companies. </p>
+				<p>Your privacy is important to us: Berger collects, uses and discloses the information you submit to process and administer your account with Berger. Berger (and its marketing and communications agencies on its behalf) may also use your name and contact details to send you information for this purpose. If you opt in to receive updates for Berger products or promotions, Berger (and its marketing and communications agencies on its behalf) may also use your name and contact details to send you information for this purpose. Berger may disclose the information to contractors, market research organisations, marketing and communications agencies and related bodies corporate for the above purposes. If you do not provide the personal information requested, we will not be able to fulfil your request. We may also exchange your personal information with other related companies and our service providers, such as delivery companies and technology providers.</p>
+				<p>Please refer to our Privacy Policy, available on our website (www.berger.com.au/privacy-policy) or on request. It contains further details about: (i) the personal information we collect; (ii) what we do with it; (iii) where we send it; (iv) how you can access and correct it; (v) how you can lodge a privacy complaint regarding the handling of your personal information; (vi) how we handle those complaints; (vii) online privacy; and (viii) the types of service providers we use.</p>
+				<p><strong>If you have any questions regarding the way Berger handles your personal information or wish to seek access to, or correct, personal information we hold about you, please contact our Privacy Officer via privacy@duluxgroup.com.au or call +613 9263 5678.</strong></p>
+				</div>
+
+				<div class="clearfix"></div>
+
+			</div>
+
+		</div>
+
+		<div class="col-xs-12 col-md-2"></div>
+
+	</div>
+
+</div>
+
+
+<div class="footer">
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-xs-12 col-md-3">
+
+				<div class="site__logo site__logo--footer">
+
+					<a href="#" class="logo__link">
+						<img src="./example/logo.png" alt="">
+					</a>
+
+				</div>
+
+			</div>
+
+			<div class="col-xs-12 col-md-9">
+
+				<div class="row">
+
+					<div class="col-xs-12 col-md-3">
+
+						<nav class="navbar navbar--footer">
+
+							<h4 class="navbar--heading">About Us</h4>
+
+							<ul id="$navigation-type" class="nav navbar-nav level-1">
+
+								<li class="active dropdown navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Paint For a Mate</span>
+
+									</a>
+
+								</li>
+
+								<li class="navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Colour Accuracy</span>
+
+									</a>
+
+								</li>
+
+								<li class="navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Contact Us</span>
+
+									</a>
+
+								</li>
+
+								<li class="navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Terms &amp; Conditions</span>
+
+									</a>
+
+								</li>
+
+								<li class="navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Privacy Policy</span>
+
+									</a>
+
+								</li>
+
+							</ul>
+
+						</nav>
+
+					</div>
+
+					<div class="col-xs-12 col-md-3">
+
+						<nav class="navbar navbar--footer">
+
+							<h4 class="navbar--heading">Products</h4>
+
+							<ul id="$navigation-type" class="nav navbar-nav level-1">
+
+								<li class="active dropdown navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Interior</span>
+
+									</a>
+
+								</li>
+
+								<li class="navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Exterior</span>
+
+									</a>
+
+								</li>
+
+								<li class="navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Concrete &amp; Paving</span>
+
+									</a>
+
+								</li>
+
+								<li class="navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Natural Stone</span>
+
+									</a>
+
+								</li>
+
+								<li class="navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Berger Jet Dry</span>
+
+									</a>
+
+								</li>
+
+							</ul>
+
+						</nav>
+
+					</div>
+
+					<div class="col-xs-12 col-md-3">
+
+						<nav class="navbar navbar--footer">
+
+							<h4 class="navbar--heading">Colour</h4>
+
+							<ul id="$navigation-type" class="nav navbar-nav level-1">
+
+								<li class="active dropdown navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Colour Chart</span>
+
+									</a>
+
+								</li>
+
+								<li class="navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Colourbond</span>
+
+									</a>
+
+								</li>
+
+								<li class="navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Concrete Colours</span>
+
+									</a>
+
+								</li>
+
+							</ul>
+
+						</nav>
+
+					</div>
+
+					<div class="col-xs-12 col-md-3">
+
+						<nav class="navbar navbar--footer">
+
+							<h4 class="navbar--heading">How-To</h4>
+
+							<ul id="$navigation-type" class="nav navbar-nav level-1">
+
+								<li class="active dropdown navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Inspiration</span>
+
+									</a>
+
+								</li>
+
+								<li class="navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Paint Calculator</span>
+
+									</a>
+
+								</li>
+
+								<li class="navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Home Team</span>
+
+									</a>
+
+								</li>
+
+							</ul>
+
+						</nav>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<script type="text/javascript" src="/library/build/js/_DG.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!--
+
+Component Name: Search Results
+___________________________________
+
+Last Edited: 25/06/15
+Edited By: Dan Riddell @ 24 Digital
+Author URI: dan@24digital.com.au
+___________________________________
+
+DESCRIPTION:
+
+The tag that holds the Results as submitted from a search form.
+
+Sits independent due to use cases in British Pains and Berger Sites.
+
+$type-flag could be swatch, product, etc.
+
+
+___________________________________
+
+-->
+
+<div class="search-results--group $search-group">
+
+	<span class="title search-results-group--title">$category-title</span>
+
+	<ul class="list-group search-results--list $type-flag">
+		
+		<!-- Load Background Colour if swatch -->
+		<li class="list-group-item" style="background-color:$color">
+			
+			<!-- Load image if present -->
+			<img class="search-results--image" src="" alt="">
+
+			<span class="title search-results--product-title">$product_text</span>
+
+		</li>
+
+	</ul>
+	
+</div>

@@ -1,0 +1,104 @@
+<!--
+
+Component Name: Accordion
+___________________________________
+
+Last Edited: 16/07/15
+Edited By: Dan Riddell @ 24 Digital
+Author URI: dan@24digital.com.au
+___________________________________
+
+DESCRIPTION:
+
+Bootstrap accordion for use across the site.
+
+SETTINGS:
+
+1. Accordion Name - $accordion-name
+2. Heading for each panel
+3. If each panel should be a list or a just content
+4. List content or just WYSIWYG for each panel
+
+___________________________________
+
+-->
+
+<div class="panel-group" id="$accordion-name" role="tablist" aria-multiselectable="true">
+
+	<!-- WYSIWYG Panel Example -->
+	<div class="panel panel-default">
+
+		<div class="panel-heading" role="tab" id="$accordion-name--heading_1">
+			
+			<h4 class="panel-title">
+				
+				<a role="button" data-toggle="collapse" data-parent="#$accordion" href="#$accordion-name--content_1" aria-expanded="true" aria-controls="$accordion-name--content_1">
+
+					Body Text
+
+				</a>
+
+			</h4>
+
+		</div>
+
+		<div id="$accordion-name--content_1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="$accordion-name--heading_1">
+			
+			<div class="panel-body">
+
+				Piece of body text
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- List Panel Example -->
+	<div class="panel panel-default">
+
+		<div class="panel-heading" role="tab" id="$accordion-name--heading_2">
+	
+			<h4 class="panel-title">
+				
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#$accordion" href="#$accordion-name--content_2" aria-expanded="false" aria-controls="$accordion-name--content_2">
+
+					List Groups
+
+				</a>
+
+			</h4>
+
+		</div>
+
+		<div id="$accordion-name--content_2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="$accordion-name--heading_2">
+
+			<ul class="list-groups">
+
+				<li>
+
+					<a href="">
+					
+						<i class="fa $fa-icon"></i> A Downloadable Link 
+
+					</a>
+
+				</li>
+
+				<li>
+					
+					<a href="">
+
+						<i class="fa $fa-icon"></i> Second Downloadable Link 
+
+					</a>
+
+				</li>
+
+			</ul>
+
+		</div>
+
+	</div>
+
+</div>

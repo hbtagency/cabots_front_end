@@ -1,0 +1,62 @@
+<!--
+
+Component Name: Tabbed Content
+___________________________________
+
+Last Edited: 16/07/15
+Edited By: Dan Riddell @ 24 Digital
+Author URI: dan@24digital.com.au
+___________________________________
+
+DESCRIPTION:
+
+Bootstrap tabs for use across the site
+
+Apply class "fade" to each tab-pane for fade effect
+
+SETTINGS:
+
+1. $module-type – either colour / product or projects (inspiration)
+2. $module-title
+3. Title and description for each swatch or product
+4. Ability to turn on / off the "see all"
+
+___________________________________
+
+-->
+
+<div class="related-items $module-type">
+	
+	<span class="related-items__title">$module-title</span>
+
+	<a class="related-items__see_all">
+
+		See All <i class="fa fa-chevron-right"></i>
+
+	</a>
+
+	<ul class="related-items__list list-inline">
+		
+		<li class="related-items__list-item $col-width" style="background:$colour">
+
+			<a class="related-items__item-link" href="#">
+			
+				<img src="$image-src" alt="">
+
+				<span class="related-items__item-title">$item-title</span>
+
+				<span class="related-items__item-description">
+					
+					$item-description
+
+				</span>
+
+			</a>
+
+			<!-- include project actions in here -->
+
+		</li>
+
+	</ul>
+
+</div>

@@ -1,0 +1,13 @@
+.navbar {
+
+	
+	.dropdown a:hover ~ .dropdown-menu,
+	.dropdown-menu:hover,
+	.dropdown-menu.show, {
+
+		display: block;
+
+	}
+
+
+}

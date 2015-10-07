@@ -1,0 +1,78 @@
+<!--
+
+Component Name: Register
+___________________________________
+
+Last Edited: 22/07/15
+Edited By: Dan Riddell @ 24 Digital
+Author URI: dan@24digital.com.au
+___________________________________
+
+DESCRIPTION:
+
+Register form, contains arbitrary fields below, but imagine this would be flexible depending on create-account requirements
+
+Contains a -/-required modifier for required fields
+
+___________________________________
+
+-->
+
+<div class="create-account">
+
+	<span class="create-account_title">Some text for intro purposes</span>
+	
+	<ul class="create-account__fields">
+
+		<li class="create-account__field-item create-account__field-item--required">
+			
+			<label for="firstname" class="create-account__label">First Name:</label>
+			<input type="text" class="create-account__field create-account__field--text" id="firstname" name="firstname" placeholder="Email">
+
+		</li>
+
+		<li class="create-account__field-item create-account__field-item--required">
+			
+			<label for="lastname" class="create-account__label">Last Name:</label>
+			<input type="text" class="create-account__field create-account__field--text" id="lastname" name="lastname" placeholder="Email">
+
+		</li>
+		
+		<li class="create-account__field-item create-account__field-item--required">
+			
+			<label for="username" class="create-account__label">Email Adddress:</label>
+			<input type="text" class="create-account__field create-account__field--text" id="username" name="username" placeholder="Email">
+
+		</li>
+
+		<li class="create-account__field-item create-account__field-item--required">
+			
+			<label for="password" class="create-account__label">Password:</label>
+			<input type="password" class="create-account__field create-account__field--password" id="password" placeholder="Password">
+
+		</li>
+
+		<li class="create-account__field-item create-account__field-item--required">
+			
+			<label for="password-confirm" class="create-account__label">Confirm your Password:</label>
+			<input type="password" class="create-account__field create-account__field--password" id="password-confirm" placeholder="Password">
+
+		</li>
+
+		<li class="create-account__field-item create-account__field-item--required">
+			
+			<label for="subscribe" class="create-account__label">Sign Up to Our Newseltter</label>
+			<input type="checkbox" class="create-account__field create-account__field--checkbox" id="subscribe">
+
+		</li>
+
+		<li class="create-account__field-item--submit">
+			
+			<label for="submit" class="create-account__label">Create Account</label>
+			<button class="create-account__field create-account__field--button">Create Account</button>
+
+		</li>
+
+	</ul>
+
+</div>

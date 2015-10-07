@@ -1,0 +1,40 @@
+.colour-chart {
+
+	.colour-block {
+
+		width: 16.667%;
+		float: left;
+		height: 200px;
+		position: relative;
+
+		&__title,
+		&__code {
+			display: none;
+			color: #fff;
+		}
+
+		&:hover {
+
+			.colour-block__title,
+			.colour-block__code {
+				display: block;
+			}
+
+			.project-buttons {
+				display: block;
+			}
+
+		}
+
+	}
+
+	.project-buttons {
+		
+		position: absolute;
+		bottom: 0px;
+		right: 10px;
+		display: none;
+
+	}
+
+}

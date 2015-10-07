@@ -1,0 +1,46 @@
+/*
+
+Default styling for slick Carousel
+
+DO NOT EDIT
+________________________________________
+
+Last Edited by: Dan Riddell @ 24 Digital
+Author URL: dan@24digital.com.au
+Edited Date: 25/06/15
+
+ */
+
+.slick {
+
+	.slick-prev,
+	.slick-next {
+		position: absolute;
+		top: 48%;
+	}
+
+	.slick-prev {
+		left: 0;
+	}
+	
+	.slick-next {
+		right: 0;
+	}
+
+	.slick-slide {
+
+		position: relative;
+
+	}
+
+
+	.slide--content {
+
+		position: absolute;
+		top: 50%;
+		left: 45%;
+
+	}
+
+
+}

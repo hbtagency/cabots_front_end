@@ -1,0 +1,35 @@
+.related-items {
+	
+	&--products {
+		width: 60%;
+		margin: 0 auto;
+	}
+
+	&__title {
+		font-size: 18px;
+		text-transform:uppercase;	
+	}
+	&__see-all {
+		float: right;
+		font-size:12px;
+		text-transform:uppercase;
+		color:#000;
+		text-decoration:none;
+	}
+
+	&__list-item {
+
+		height:180px;
+		position:relative;
+
+	}
+
+	&__item-title {
+
+		position:absolute;
+		top:15px;
+		left:15px;
+
+	}
+
+}

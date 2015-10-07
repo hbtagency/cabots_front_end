@@ -1,0 +1,54 @@
+<!--
+
+Component Name: Create Account
+___________________________________
+
+Last Edited: 22/07/15
+Edited By: Tom Macready-Bryan @ 24 Digital
+Author URI: tom@24digital.com.au
+___________________________________
+
+DESCRIPTION:
+
+Create an Account
+
+This could be display as tabs or on click go to a separate page, just depends how it's designed.
+
+As such, would imagine there could be even handlers bound to the each of these that would control
+
+___________________________________
+
+-->
+
+<ul class="create-account">
+
+	<!-- for creating a new account -->
+	
+	<li class="create-account__button create-account_button--create-new">
+		
+		<a href="#" class="create-account__link"><i class="fa fa-plus"></i> Create Account</a>
+
+	</li>
+
+	<li class="create-account__button">
+		
+		<a href="#" class="create-account__link">Sign In</a>
+
+	</li>
+
+
+</ul>
+
+<!-- assuming we need an input field once the above is clicked -->
+<!-- decoupled from the ul for flexibility -->
+<div class="new-account">
+
+	<form id="new-account" class="new-account__form" name="new-account">
+	
+		<label for="new-account-name" class="new-account__label">First Name</label>
+
+		<input type="text" class="new-account__field new-account__field--text" id="new-account-name" name="new-account-name">
+
+	</form>
+
+</div>

@@ -1,0 +1,90 @@
+<!--
+
+Component Name: Store Listing
+___________________________________
+
+Last Edited: 22/07/15
+Edited By: Dan Riddell @ 24 Digital
+Author URI: dan@24digital.com.au
+___________________________________
+
+DESCRIPTION:
+
+Used for store listings. Generic "mapCanvas" is supplied for binding a google map to.
+
+Span first up is used to inject the search query into.
+
+___________________________________
+
+-->
+
+<ul class="store-search">
+
+	
+	<li class="store-search_field">
+		
+		<label for="postcode" class="store-search__label">Postcode or suburb</label>
+		
+		<input type="text" class="store-search__field store-search__field--text" id="postcode">
+
+	</li>
+
+	<li class="store-search_field">
+		
+		<label for="search-radius" class="store-search__label">Search Radius</label>
+		
+		<select class="store-search__field store-search__field--select" id="search-radius">
+			
+			<option value="5">5km</option>
+
+			<option value="10">10km</option>
+			
+			<option value="50">50km</option>
+
+		</select>
+
+	</li>
+
+	<li class="store-search_field store-search_field--range">
+		
+		<label for="range-type" class="store-search__label">What range are you looking for?</label>
+
+		<input type="checkbox" class="store-search__field store-search__field--checkbox" name="range-type" value="jet-dry">
+
+	</li>
+
+	<li class="store-search_field store-search_field--submit">
+		
+		<label for="store-search-button" class="store-search__label">Search</label>
+		
+		<button class="store-search__field store-search__field--submit" type="button" id="store-search-button">Search</button>
+
+	</li>
+
+
+</ul>
+
+<span class="store-results-title">Search results for "Jet Dry", in "Melbourne".</span>
+
+
+<div id="mapCanvas"></div>
+
+
+<ul class="store-results">
+	
+	<li class="store-results__item" data-range="jet-dry,berger-paints">
+		
+		<span class="store-results__store-name">Bunnings Port Melbourne</span>
+
+		<span class="store-results__store-address">123 Street Name, Suburb, Postcode</span>
+
+		<a class="store-results__store-number" href"tel:90050055">(03) 9005 0055</a>
+
+		<span class="store-results__range">In Store: Jet Dry, Berger Paints</span>
+
+		<a class="store-results__store-link" href"#" target="_blank">Link</a>
+
+	</li>
+
+</ul>
+

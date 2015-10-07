@@ -1,0 +1,52 @@
+<!--
+
+Component Name: Tabbed Content
+___________________________________
+
+Last Edited: 16/07/15
+Edited By: Dan Riddell @ 24 Digital
+Author URI: dan@24digital.com.au
+___________________________________
+
+DESCRIPTION:
+
+Bootstrap tabs for use across the site
+
+Apply class "fade" to each tab-pane for fade effect
+
+SETTINGS:
+
+1. Tabs Name - $tab-name
+2. Heading for each panel
+3. Content for Each panel (WYSIWYG)
+4. Whether the content should fade in
+
+___________________________________
+
+-->
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist" id="$tab-name">
+	
+	<li role="presentation" class="active">
+		
+		<a href="#$tab-name--1" aria-controls="home" role="tab" data-toggle="tab">$Heading One</a>
+
+	</li>
+	
+	<li role="presentation">
+
+		<a href="#$tab-name--2" aria-controls="profile" role="tab" data-toggle="tab">$Heading Two</a>
+
+	</li>
+
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+
+	<div role="tabpanel" class="tab-pane active" id="$tab-name--1">...</div>
+
+	<div role="tabpanel" class="tab-pane" id="$tab-name--2">...</div>
+
+</div>

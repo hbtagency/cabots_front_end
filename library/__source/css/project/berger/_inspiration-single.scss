@@ -1,0 +1,70 @@
+.inspiration-single {
+
+	.gallery {
+
+		padding:50px;
+		background:#f6f6f6;
+
+		&__title {
+
+			text-align:center;
+			margin:30px 0;
+
+		}
+
+		&__item {
+
+			margin:10px;
+
+		}
+
+		&__button {
+
+			text-align:center;
+			width:200px;
+			padding:20px 0;
+			text-transform:uppercase;
+			color:#000;
+			text-decoration:none;
+			font-size:18px;
+			background:#fff;
+			margin:0 auto;
+			display:block;
+
+		}
+
+		button {
+
+			&:before {
+
+				color:#000;
+				font-family:'FontAwesome';
+				font-size:60px;
+
+			}
+
+			&.slick-prev {
+
+				&:before {
+
+					content:'\f104';
+
+				}
+
+			}
+
+			&.slick-next {
+
+				&:before {
+
+					content:'\f105';
+
+				}
+
+			}
+
+		}
+
+	}
+
+}

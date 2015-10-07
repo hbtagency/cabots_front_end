@@ -1,0 +1,73 @@
+<!--
+
+Component Name: Login
+___________________________________
+
+Last Edited: 22/06/15
+Edited By: Dan Riddell @ 24 Digital
+Author URI: dan@24digital.com.au
+___________________________________
+
+DESCRIPTION:
+
+Simple Login Form
+
+Actions can have a modifier on the link to distinguish between each action (register / forgot password / etc)
+
+___________________________________
+
+-->
+
+<div class="login">
+
+	<span class="login_title">Some text for intro purposes</span>
+	
+	<ul class="login__fields">
+		
+		<li class="login__field-item">
+			
+			<label for="username" class="login__label">Email Adddress:</label>
+			<input type="text" class="login__field login__field--text" id="username" name="username" placeholder="Email">
+
+		</li>
+
+		<li class="login__field-item">
+			
+			<label for="password" class="login__label">Email Adddress:</label>
+			<input type="password" class="login__field login__field--password" id="password" placeholder="Password">
+
+		</li>
+
+		<li class="login__field-item">
+			
+			<label for="remember-me" class="login__label">Remember Me?</label>
+			<input type="checkbox" class="login__field login__field--checkbox" id="remember-me">
+
+		</li>
+
+		<li class="login__field-item login__field-item--submit">
+			
+			<label for="submit" class="login__label">Login</label>
+			<button class="login__field login__field--button">Login</button>
+
+		</li>
+
+	</ul>
+
+	<ul class="login__actions">
+		
+		<li class="login__actions-item">
+			
+			<a href="/register" class="login__action-link login__action-link--register">Register</a>
+
+		</li>
+
+		<li class="login__actions-item">
+			
+			<a href="/forgot-password" class="login__action-link">Forgotten your password?</a>
+
+		</li>
+
+	</ul>
+
+</div>

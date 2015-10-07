@@ -1,0 +1,33 @@
+<!--
+
+Component Name: Breadcrumb
+___________________________________
+
+Last Edited: 24/06/15
+Edited By: Dan Riddell @ 24 Digital
+Author URI: dan@24digital.com.au
+___________________________________
+
+DESCRIPTION:
+
+Simple breadcrumb. Parents should be links, current page shouldn't be.
+
+Separators to be defined in CSS, using the "content" property.
+
+___________________________________
+
+-->
+	
+<ol class="breadcrumb">
+	
+	<li>
+		<a class="breadcrumb--link" href="$parent_link">
+			$parent_title
+		</a>
+	</li>
+
+	<li class="active">
+		$current_title
+	</li>
+
+</ol>

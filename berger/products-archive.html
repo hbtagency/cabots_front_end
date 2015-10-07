@@ -1,0 +1,2159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dulux Frontend Framework Example</title>
+	<link rel="stylesheet" href="/library/build/css/_DG.min.css">
+	<link rel="stylesheet" href="/library/__source/bower_components/slick-carousel/slick/slick-theme.css">
+</head>
+
+<!-- 
+
+In this file:
+
+(Header)
+– Logo
+– Navbar
+– Breadcrumbs
+– Search Form
+
+(Main Section)
+- Page Header
+– Product Filters 
+- Product Listing
+	– Project Buttons
+- Accordion
+
+(Bottom of Template)
+– Logo
+– Navbar
+
+-->
+
+<body class="product-archive">
+
+<div id="top-menu" class="container-fluid">
+
+	<div class="row">
+
+		<div class="col-xs-12 col-md-4 pull-right">
+			
+			<nav class="navbar navbar-top">
+
+				<ul class="nav navbar-nav level-1">
+
+					<li class="navbar--list-item">
+
+						<!-- Link tag only if link is present in backend -->
+						<a class="menu--link" href="$link">
+
+							<i class="fa fa-paint-brush"></i>
+
+							<span class="menu--link-text current-parent">
+								My Projects 
+								<span class="menu--link-text-counter">(1)</span>
+							</span>
+
+						</a>
+
+					</li>
+
+					<li class="navbar--list-item">
+
+						<!-- Link tag only if link is present in backend -->
+						<a class="menu--link" href="$link">
+
+							<i class="fa fa-map-marker"></i>
+
+							<span class="menu--link-text current-parent">
+								Store Locator
+							</span>
+
+						</a>
+
+					</li>
+
+					<li class="navbar--list-item navbar--list-item-search">
+
+						<!-- Link tag only if link is present in backend -->
+						<div class="search-form">
+
+							<i class="icon search-form--icon $icon--type"></i>
+
+							<span class="search-form--text">Search</span>
+							
+							<div class="input-group search-form--wrapper">
+
+								<input class="search-form--input form-control" type="text" />
+								
+								<span class="input-group-btn">
+							     
+							        <button class="btn btn-default" type="button">Search</button>
+
+								</span>
+
+							</div>
+
+						</div>
+
+					</li>
+
+
+				</ul>
+
+			</nav>
+
+		</div>
+		
+	</div>
+
+</div>
+
+<div class="container">
+
+	<div class="row">
+
+		<div class="col-xs-12 col-md-3">
+			
+			<div class="site__logo site__logo--header">
+				
+				<a href="#" class="logo__link">
+					<img src="./example/logo.png" alt="">
+				</a>
+
+			</div>
+
+		</div>
+		
+		<div class="col-xs-12 col-md-9">
+	
+			<nav class="navbar navbar-main">
+
+				<ul id="main-menu" class="nav navbar-nav level-1">
+
+					<li class="dropdown navbar--list-item">
+
+						<!-- Link tag only if link is present in backend -->
+						<a class="dropdown-toggle menu--link" href="$link">
+
+							<span class="menu--link-text current-parent">Colour Chart</span>
+
+						</a>
+
+						<!-- Second level Nav Item -->
+						<ul class="dropdown-menu dropdown--list level-2">
+							
+							<li class="navbar--list-item">
+								<a class="menu--link" href="$link">
+									<span class="menu--link-text">Berger</span>
+								</a>
+							</li>
+
+							<li class="navbar--list-item">
+								<a class="menu--link" href="$link">
+									<span class="menu--link-text">Jet Dry</span>
+								</a>
+							</li>
+
+							<li class="navbar--list-item">
+								<a class="menu--link" href="$link">
+									<span class="menu--link-text">Colour Bond</span>
+								</a>
+							</li>
+
+						</ul>
+
+					</li>
+
+					<li class="dropdown navbar--list-item">
+
+						<!-- Link tag only if link is present in backend -->
+						<a class="dropdown-toggle menu--link" href="$link">
+
+							<span class="menu--link-text current-parent">Products</span>
+
+						</a>
+
+						<!-- Second level Nav Item -->
+						<ul class="dropdown-menu dropdown--list level-2">
+
+							<li class="dropdown navbar--list-item">
+
+								<!-- Link tag only if link is present in backend -->
+								<span class="menu--link-text">Berger</span>
+
+								<ul class="dropdown-menu dropdown--list level-3">
+							
+									<li class="navbar--list-item">
+										<a class="menu--link" href="$link">
+											<span class="menu--link-text">Exterior</span>
+										</a>
+									</li>
+
+									<li class="navbar--list-item">
+										<a class="menu--link" href="$link">
+											<span class="menu--link-text">Interior</span>
+										</a>
+									</li>
+
+									<li class="navbar--list-item">
+										<a class="menu--link" href="$link">
+											<span class="menu--link-text">Enamels</span>
+										</a>
+									</li>
+
+									<li class="navbar--list-item">
+										<a class="menu--link" href="$link">
+											<span class="menu--link-text">Prep</span>
+										</a>
+									</li>
+
+								</ul>
+
+							</li>
+
+						</ul>
+
+						<!-- Second level Nav Item -->
+						<ul class="dropdown-menu dropdown--list level-2">
+
+							<li class="dropdown navbar--list-item">
+
+								<!-- Link tag only if link is present in backend -->
+								<span class="menu--link-text">Berger Jet Dry</span>
+
+								<ul class="dropdown-menu dropdown--list level-3">
+							
+									<li class="navbar--list-item">
+										<a class="menu--link" href="$link">
+											<span class="menu--link-text">Concrete</span>
+										</a>
+									</li>
+
+									<li class="navbar--list-item">
+										<a class="menu--link" href="$link">
+											<span class="menu--link-text">Paving</span>
+										</a>
+									</li>
+
+									<li class="navbar--list-item">
+										<a class="menu--link" href="$link">
+											<span class="menu--link-text">Natural Stone</span>
+										</a>
+									</li>
+
+								</ul>
+
+							</li>
+
+						</ul>
+
+					</li>
+
+					<li class="dropdown navbar--list-item">
+
+						<!-- Link tag only if link is present in backend -->
+						<a class="dropdown-toggle menu--link" href="$link">
+
+							<span class="menu--link-text current-parent">Inspiration</span>
+
+						</a>
+
+					</li>
+
+					<li class="dropdown navbar--list-item">
+
+						<!-- Link tag only if link is present in backend -->
+						<a class="dropdown-toggle menu--link" href="$link">
+
+							<span class="menu--link-text current-parent">How-to &amp; DIY</span>
+
+						</a>
+
+					</li>
+
+					<li class="dropdown navbar--list-item">
+
+						<!-- Link tag only if link is present in backend -->
+						<a class="dropdown-toggle menu--link" href="$link">
+
+							<span class="menu--link-text current-parent">Paint For a Mate</span>
+
+						</a>
+
+					</li>
+
+				</ul>
+
+			</nav>
+
+		</div> <!-- end col -->
+
+	</div> <!-- end Row -->
+
+</div> <!-- end cont. -->
+
+<div class="container">
+
+	<div class="row">
+
+		<div class="col-xs-12">
+
+			<ol class="breadcrumb">
+					
+					<li>
+						<a class="breadcrumb--link" href="/">
+							Home
+						</a>
+					</li>
+
+					<li>
+						<a class="breadcrumb--link" href="/">
+							Products
+						</a>
+					</li>
+
+					<li class="active">
+						Our Product Range
+					</li>
+
+				</ol>
+
+		</div>
+
+	</div> <!-- End Row -->
+
+</div>
+
+
+<div class="container">
+
+	<div class="row">
+
+		<div class="col-xs-12 col-md-8">
+
+			<div class="page-header">
+
+				<h1 class="page-header__heading">Our Product Range</h1>
+
+				<p class="page-header__description">
+					
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru.
+
+				</p>
+
+			</div>
+
+		</div>
+
+		<div class="col-xs-12 col-md-12">
+			
+			<div class="panel-group panel-group--helper" id="product_helper" role="tablist" aria-multiselectable="true">
+
+				<div class="panel panel-default">
+
+					<div class="panel-heading" role="tab" id="product_helper--heading_1">
+
+						<h4 class="panel-title pull-right">
+							
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#product_helper" href="#product_helper--content_1" aria-expanded="false" aria-controls="product_helper--content_1">
+
+								Need a hand selecting your paint?
+
+								<i class="fa fa-angle-down"></i>
+
+							</a>
+
+						</h4>
+
+					</div>
+
+					<div id="product_helper--content_1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="product_helper--heading_1">
+
+						<p>
+
+							<span class="">We're here to help.</span>
+
+							Some copy about using the paint selection helper tool. Just answer the questions to see the paint.
+
+						</p>
+
+						<h4>Where are you planning to paint?</h4>
+
+						<ul class="list-groups">
+
+							<li>
+
+								<input id="inside" name="Exterior" type="checkbox" value="true">
+
+				                <label for="inside">Inside</label>
+
+							</li>
+
+							<li>
+								
+								<input id="outside" name="Outside" type="checkbox" value="true">
+
+								<label for="outside">Outside</label>
+
+							</li>
+
+							<li>
+
+								<input id="roof" name="Roof" type="checkbox" value="true">
+
+				                <label for="roof">Roof</label>
+
+							</li>
+
+							<li>
+								
+								<input id="paving" name="Paving" type="checkbox" value="true">
+
+								<label for="paving">Paving/Concrete</label>
+
+							</li>
+
+						</ul>
+
+						<h4>What type of surface are you painting?</h4>
+
+						<ul class="list-groups">
+
+							<li>
+
+								<input id="garage" name="Garage" type="checkbox" value="true">
+
+				                <label for="garage">Garage</label>
+
+							</li>
+
+							<li>
+								
+								<input id="pool" name="Pool" type="checkbox" value="true">
+
+								<label for="pool">Pool</label>
+
+							</li>
+
+							<li>
+
+								<input id="driveway" name="Driveway" type="checkbox" value="true">
+
+				                <label for="driveway">Driveway</label>
+
+							</li>
+
+							<li>
+								
+								<input id="path" name="Path" type="checkbox" value="true">
+
+								<label for="path">Path/Walkway</label>
+
+							</li>
+
+						</ul>
+
+						<div class="panel-bottom">
+
+							<span class="panel-bottom__selected">Filters Selected: Paving/Concrete, Garage</span>
+							<span class="panel-bottom__view-products">View your products below <i class="fa fa-angle-down"></i></span>
+
+						</div>
+
+
+					</div>
+
+				</div>
+				
+			</div>
+
+		</div> <!-- end col -->
+
+		</div>
+
+	</div>
+
+</div>
+
+<div class="container">
+
+	<div class="row">
+		
+		<div class="col-xs-4 col-md-4">
+
+			<span class="view-all">
+
+				<a class="btn btn-ghost" href="#">
+					View All Products
+				</a>
+
+			</span>
+
+			<div class="panel-group panel-group-filter" id="product_filter" role="tablist" aria-multiselectable="true">
+
+				<div class="panel panel-default">
+
+					<div class="panel-heading" role="tab" id="product_filter--heading_1">
+
+						<h4 class="panel-title">
+							
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#product_filter"  href="#product_filter--content_1" aria-expanded="false" aria-controls="product_filter--content_1">
+
+								Where to use
+
+								<i class="fa fa-angle-down"></i>
+
+							</a>
+
+						</h4>
+
+					</div>
+
+					<div id="product_filter--content_1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="product_filter--heading_1">
+
+						<ul class="list-groups">
+
+							<li>
+
+								<input id="exterior" name="Exterior" type="checkbox" value="true">
+
+				                <label for="exterior">Exterior</label>
+
+							</li>
+
+							<li>
+								
+								<input id="interior" name="Interior" type="checkbox" value="true">
+
+								<label for="interior">Interior</label>
+
+							</li>
+
+							<li>
+
+								<input id="roof" name="Roof" type="checkbox" value="true">
+
+				                <label for="roof">Exterior</label>
+
+							</li>
+
+							<li>
+								
+								<input id="paving" name="Paving" type="checkbox" value="true">
+
+								<label for="paving">Paving/Concrete</label>
+
+							</li>
+
+						</ul>
+
+						<span class="clear-filter">
+
+							<a href="#" class="clear-filter__link">
+
+								<i class="fa fa-times-circle-o"></i>
+
+								CLEAR
+
+							</a>
+
+						</span>
+
+					</div>
+
+				</div>
+
+				<div class="panel panel-default">
+
+					<div class="panel-heading" role="tab" id="product_filter--heading_2">
+
+						<h4 class="panel-title">
+							
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#product_filter" href="#product_filter--content_2" aria-expanded="false" aria-controls="product_filter--content_2">
+
+								Area
+
+								<i class="fa fa-angle-down"></i>
+
+							</a>
+
+						</h4>
+
+					</div>
+
+					<div id="product_filter--content_2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="product_filter--heading_2">
+
+						<ul class="list-groups">
+
+							<li>
+
+
+							</li>
+
+						</ul>
+
+						<span class="clear-filter">
+
+							<a href="#" class="clear-filter__link">
+
+								<i class="fa fa-times-circle-o"></i>
+
+								CLEAR
+
+							</a>
+
+						</span>
+
+					</div>
+
+				</div>
+
+				<div class="panel panel-default">
+
+					<div class="panel-heading" role="tab" id="product_filter--heading_3">
+
+						<h4 class="panel-title">
+							
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#product_filter" href="#product_filter--content_3" aria-expanded="false" aria-controls="product_filter--content_3">
+
+								Surface
+
+								<i class="fa fa-angle-down"></i>
+
+							</a>
+
+						</h4>
+
+					</div>
+
+					<div id="product_filter--content_3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="product_filter--heading_3">
+
+						<ul class="list-groups">
+
+							<li>
+
+								<input id="garage" name="Garage" type="checkbox" value="true">
+
+				                <label for="garage">Garage</label>
+
+							</li>
+
+							<li>
+								
+								<input id="pool" name="Pool" type="checkbox" value="true">
+
+								<label for="pool">Pool Area</label>
+
+							</li>
+
+							<li>
+								
+								<input id="driveway" name="Driveway" type="checkbox" value="true">
+
+								<label for="driveway">Driveway</label>
+
+							</li>
+
+							<li>
+								
+								<input id="path" name="Path" type="checkbox" value="true">
+
+								<label for="path">Path/Walkway</label>
+
+							</li>
+
+						</ul>
+
+						<span class="clear-filter">
+
+							<a href="#" class="clear-filter__link">
+
+								<i class="fa fa-times-circle-o"></i>
+
+								CLEAR
+
+							</a>
+
+						</span>
+
+					</div>
+
+				</div>
+
+				<div class="panel panel-default">
+
+					<div class="panel-heading" role="tab" id="product_filter--heading_4">
+
+						<h4 class="panel-title">
+							
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#product_filter" href="#product_filter--content_4" aria-expanded="false" aria-controls="product_filter--content_4">
+
+								Range
+
+								<i class="fa fa-angle-down"></i>
+
+							</a>
+
+						</h4>
+
+					</div>
+
+					<div id="product_filter--content_4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="product_filter--heading_4">
+
+						<ul class="list-groups">
+
+							<li>
+
+
+
+							</li>
+
+
+						</ul>
+
+						<span class="clear-filter">
+
+							<a href="#" class="clear-filter__link">
+
+								<i class="fa fa-times-circle-o"></i>
+
+								CLEAR
+
+							</a>
+
+						</span>
+
+					</div>
+
+				</div>
+
+				<div class="panel panel-default">
+
+					<div class="panel-heading" role="tab" id="product_filter--heading_5">
+
+						<h4 class="panel-title">
+							
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#product_filter" href="#product_filter--content_5" aria-expanded="false" aria-controls="product_filter--content_5">
+
+								Product Type
+
+								<i class="fa fa-angle-down"></i>
+
+							</a>
+
+						</h4>
+
+					</div>
+
+					<div id="product_filter--content_5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="product_filter--heading_5">
+
+						<ul class="list-groups">
+
+							<li>
+
+
+
+							</li>
+
+
+						</ul>
+
+						<span class="clear-filter">
+
+							<a href="#" class="clear-filter__link">
+
+								<i class="fa fa-times-circle-o"></i>
+
+								CLEAR
+
+							</a>
+
+						</span>
+
+					</div>
+
+				</div>
+
+				<div class="panel panel-default">
+
+					<div class="panel-heading" role="tab" id="product_filter--heading_6">
+
+						<h4 class="panel-title">
+							
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#product_filter" href="product_filter--content_6" aria-expanded="false" aria-controls="product_filter--content_6">
+
+								Gloss Level
+
+								<i class="fa fa-angle-down"></i>
+
+							</a>
+
+						</h4>
+
+					</div>
+
+					<div id="product_filter--content_6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="product_filter--heading_6">
+
+						<ul class="list-groups">
+
+							<li>
+
+
+
+							</li>
+
+
+						</ul>
+
+						<span class="clear-filter">
+
+							<a href="#" class="clear-filter__link">
+
+								<i class="fa fa-times-circle-o"></i>
+
+								CLEAR
+
+							</a>
+
+						</span>
+
+					</div>
+
+				</div>
+
+				<div class="panel panel-default">
+
+					<div class="panel-heading" role="tab" id="product_filter--heading_7">
+
+						<h4 class="panel-title">
+							
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#product_filter" href="product_filter--content_7" aria-expanded="false" aria-controls="product_filter--content_7">
+
+								Size
+
+								<i class="fa fa-angle-down"></i>
+
+							</a>
+
+						</h4>
+
+					</div>
+
+					<div id="product_filter--content_7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="product_filter--heading_7">
+
+						<ul class="list-groups">
+
+							<li>
+
+
+
+							</li>
+
+
+						</ul>
+
+						<span class="clear-filter">
+
+							<a href="#" class="clear-filter__link">
+
+								<i class="fa fa-times-circle-o"></i>
+
+								CLEAR
+
+							</a>
+
+						</span>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div> <!-- end col -->
+
+		<div class="col-xs-8 col-md-8">
+
+			<ul class="product-list">
+				
+				<li class="product-list__single-product">
+					
+
+					<a href="#" class="product-list__link">
+						
+						<img src="/example/product.png" alt="" class="product-list__image">
+
+					</a>
+
+					<a href="#" class="product-list__link">
+						
+						British Paints 4-in-1
+
+					</a>
+
+					<span class="product-list__description">
+						
+						Secondary Text
+
+					</span>
+
+					<div class="project-buttons">
+
+						<ul class="project-buttons__list list-inline">
+							
+							<!-- Using british paints example - swatch that has sub buttons -->
+							<li class="project-buttons__item" style="background-color:$background-color;">
+								
+								<a href="#">
+
+									<i class="fa fa-plus"></i>
+
+								</a>
+
+								<!-- 
+
+									These are essentially the sub-menu for each swatch 
+									Could be turned off if the action is at the parent level
+
+								-->
+
+								<ul class="project-buttons__subactions list-inline">
+					
+									<li class="project-buttons__subactions-heading">
+										
+										<a href="#" class="">
+											<i class="fa fa-paint-brush"></i>
+											Add to My Project
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-item">
+										
+										<a href="#" class="">
+											Jess's Kitchen Makeover
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-item">
+										
+										<a href="#" class="">
+											Sandi's Lounge Room Reno
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-item">
+										
+										<a href="#" class="">
+											Dan's Lounge Room Title thant goes over many lines
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-heading">
+										
+										<a href="#" class="">
+											<i class="fa fa-plus"></i>
+											Start a new project
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-heading">
+										
+										<a href="#" class="">
+											Compare Product
+										</a>
+
+									</li>
+
+								</ul>
+
+							</li>		
+
+						</ul>		
+
+					</div>
+
+					<span class="product-list__rollover">
+
+						View Product 
+
+						<i class="fa fa-angle-right"></i>
+
+					</span>
+
+				</li>
+				
+
+				<li class="product-list__single-product">
+					
+
+					<a href="#" class="product-list__link">
+						
+						<img src="/example/product.png" alt="" class="product-list__image">
+
+					</a>
+
+					<a href="#" class="product-list__link">
+						
+						British Paints 4-in-1
+
+					</a>
+
+					<span class="product-list__description">
+						
+						Secondary Text
+
+					</span>
+
+					<div class="project-buttons">
+
+						<ul class="project-buttons__list list-inline">
+							
+							<!-- Using british paints example - swatch that has sub buttons -->
+							<li class="project-buttons__item" style="background-color:$background-color;">
+								
+								<a href="#">
+
+									<i class="fa fa-plus"></i>
+
+								</a>
+
+								<!-- 
+
+									These are essentially the sub-menu for each swatch 
+									Could be turned off if the action is at the parent level
+
+								-->
+
+								<ul class="project-buttons__subactions list-inline">
+					
+									<li class="project-buttons__subactions-heading">
+										
+										<a href="#" class="">
+											<i class="fa fa-paint-brush"></i>
+											Add to My Project
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-item">
+										
+										<a href="#" class="">
+											Jess's Kitchen Makeover
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-item">
+										
+										<a href="#" class="">
+											Sandi's Lounge Room Reno
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-item">
+										
+										<a href="#" class="">
+											Dan's Lounge Room Title thant goes over many lines
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-heading">
+										
+										<a href="#" class="">
+											<i class="fa fa-plus"></i>
+											Start a new project
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-heading">
+										
+										<a href="#" class="">
+											Compare Product
+										</a>
+
+									</li>
+
+								</ul>
+
+							</li>		
+
+						</ul>		
+
+					</div>
+
+					<span class="product-list__rollover">
+
+						View Product 
+
+						<i class="fa fa-angle-right"></i>
+
+					</span>
+
+				</li>
+
+				<li class="product-list__single-product">
+					
+
+					<a href="#" class="product-list__link">
+						
+						<img src="/example/product.png" alt="" class="product-list__image">
+
+					</a>
+
+					<a href="#" class="product-list__link">
+						
+						British Paints 4-in-1
+
+					</a>
+
+					<span class="product-list__description">
+						
+						Secondary Text
+
+					</span>
+
+					<div class="project-buttons">
+
+						<ul class="project-buttons__list list-inline">
+							
+							<!-- Using british paints example - swatch that has sub buttons -->
+							<li class="project-buttons__item" style="background-color:$background-color;">
+								
+								<a href="#">
+
+									<i class="fa fa-plus"></i>
+
+								</a>
+
+								<!-- 
+
+									These are essentially the sub-menu for each swatch 
+									Could be turned off if the action is at the parent level
+
+								-->
+
+								<ul class="project-buttons__subactions list-inline">
+					
+									<li class="project-buttons__subactions-heading">
+										
+										<a href="#" class="">
+											<i class="fa fa-paint-brush"></i>
+											Add to My Project
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-item">
+										
+										<a href="#" class="">
+											Jess's Kitchen Makeover
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-item">
+										
+										<a href="#" class="">
+											Sandi's Lounge Room Reno
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-item">
+										
+										<a href="#" class="">
+											Dan's Lounge Room Title thant goes over many lines
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-heading">
+										
+										<a href="#" class="">
+											<i class="fa fa-plus"></i>
+											Start a new project
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-heading">
+										
+										<a href="#" class="">
+											Compare Product
+										</a>
+
+									</li>
+
+								</ul>
+
+							</li>		
+
+						</ul>		
+
+					</div>
+
+					<span class="product-list__rollover">
+
+						View Product 
+
+						<i class="fa fa-angle-right"></i>
+
+					</span>
+
+				</li>
+
+				<li class="product-list__single-product">
+					
+
+					<a href="#" class="product-list__link">
+						
+						<img src="/example/product.png" alt="" class="product-list__image">
+
+					</a>
+
+					<a href="#" class="product-list__link">
+						
+						British Paints 4-in-1
+
+					</a>
+
+					<span class="product-list__description">
+						
+						Secondary Text
+
+					</span>
+
+					<div class="project-buttons">
+
+						<ul class="project-buttons__list list-inline">
+							
+							<!-- Using british paints example - swatch that has sub buttons -->
+							<li class="project-buttons__item" style="background-color:$background-color;">
+								
+								<a href="#">
+
+									<i class="fa fa-plus"></i>
+
+								</a>
+
+								<!-- 
+
+									These are essentially the sub-menu for each swatch 
+									Could be turned off if the action is at the parent level
+
+								-->
+
+								<ul class="project-buttons__subactions list-inline">
+					
+									<li class="project-buttons__subactions-heading">
+										
+										<a href="#" class="">
+											<i class="fa fa-paint-brush"></i>
+											Add to My Project
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-item">
+										
+										<a href="#" class="">
+											Jess's Kitchen Makeover
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-item">
+										
+										<a href="#" class="">
+											Sandi's Lounge Room Reno
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-item">
+										
+										<a href="#" class="">
+											Dan's Lounge Room Title thant goes over many lines
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-heading">
+										
+										<a href="#" class="">
+											<i class="fa fa-plus"></i>
+											Start a new project
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-heading">
+										
+										<a href="#" class="">
+											Compare Product
+										</a>
+
+									</li>
+
+								</ul>
+
+							</li>		
+
+						</ul>		
+
+					</div>
+
+					<span class="product-list__rollover">
+
+						View Product 
+
+						<i class="fa fa-angle-right"></i>
+
+					</span>
+
+				</li>
+				
+
+				<li class="product-list__single-product">
+					
+
+					<a href="#" class="product-list__link">
+						
+						<img src="/example/product.png" alt="" class="product-list__image">
+
+					</a>
+
+					<a href="#" class="product-list__link">
+						
+						British Paints 4-in-1
+
+					</a>
+
+					<span class="product-list__description">
+						
+						Secondary Text
+
+					</span>
+
+					<div class="project-buttons">
+
+						<ul class="project-buttons__list list-inline">
+							
+							<!-- Using british paints example - swatch that has sub buttons -->
+							<li class="project-buttons__item" style="background-color:$background-color;">
+								
+								<a href="#">
+
+									<i class="fa fa-plus"></i>
+
+								</a>
+
+								<!-- 
+
+									These are essentially the sub-menu for each swatch 
+									Could be turned off if the action is at the parent level
+
+								-->
+
+								<ul class="project-buttons__subactions list-inline">
+					
+									<li class="project-buttons__subactions-heading">
+										
+										<a href="#" class="">
+											<i class="fa fa-paint-brush"></i>
+											Add to My Project
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-item">
+										
+										<a href="#" class="">
+											Jess's Kitchen Makeover
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-item">
+										
+										<a href="#" class="">
+											Sandi's Lounge Room Reno
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-item">
+										
+										<a href="#" class="">
+											Dan's Lounge Room Title thant goes over many lines
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-heading">
+										
+										<a href="#" class="">
+											<i class="fa fa-plus"></i>
+											Start a new project
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-heading">
+										
+										<a href="#" class="">
+											Compare Product
+										</a>
+
+									</li>
+
+								</ul>
+
+							</li>		
+
+						</ul>		
+
+					</div>
+
+					<span class="product-list__rollover">
+
+						View Product 
+
+						<i class="fa fa-angle-right"></i>
+
+					</span>
+
+				</li>
+
+				<li class="product-list__single-product">
+					
+
+					<a href="#" class="product-list__link">
+						
+						<img src="/example/product.png" alt="" class="product-list__image">
+
+					</a>
+
+					<a href="#" class="product-list__link">
+						
+						British Paints 4-in-1
+
+					</a>
+
+					<span class="product-list__description">
+						
+						Secondary Text
+
+					</span>
+
+					<div class="project-buttons">
+
+						<ul class="project-buttons__list list-inline">
+							
+							<!-- Using british paints example - swatch that has sub buttons -->
+							<li class="project-buttons__item" style="background-color:$background-color;">
+								
+								<a href="#">
+
+									<i class="fa fa-plus"></i>
+
+								</a>
+
+								<!-- 
+
+									These are essentially the sub-menu for each swatch 
+									Could be turned off if the action is at the parent level
+
+								-->
+
+								<ul class="project-buttons__subactions list-inline">
+					
+									<li class="project-buttons__subactions-heading">
+										
+										<a href="#" class="">
+											<i class="fa fa-paint-brush"></i>
+											Add to My Project
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-item">
+										
+										<a href="#" class="">
+											Jess's Kitchen Makeover
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-item">
+										
+										<a href="#" class="">
+											Sandi's Lounge Room Reno
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-item">
+										
+										<a href="#" class="">
+											Dan's Lounge Room Title thant goes over many lines
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-heading">
+										
+										<a href="#" class="">
+											<i class="fa fa-plus"></i>
+											Start a new project
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-heading">
+										
+										<a href="#" class="">
+											Compare Product
+										</a>
+
+									</li>
+
+								</ul>
+
+							</li>		
+
+						</ul>		
+
+					</div>
+
+					<span class="product-list__rollover">
+
+						View Product 
+
+						<i class="fa fa-angle-right"></i>
+
+					</span>
+
+				</li>
+
+				<li class="product-list__single-product">
+					
+
+					<a href="#" class="product-list__link">
+						
+						<img src="/example/product.png" alt="" class="product-list__image">
+
+					</a>
+
+					<a href="#" class="product-list__link">
+						
+						British Paints 4-in-1
+
+					</a>
+
+					<span class="product-list__description">
+						
+						Secondary Text
+
+					</span>
+
+					<div class="project-buttons">
+
+						<ul class="project-buttons__list list-inline">
+							
+							<!-- Using british paints example - swatch that has sub buttons -->
+							<li class="project-buttons__item" style="background-color:$background-color;">
+								
+								<a href="#">
+
+									<i class="fa fa-plus"></i>
+
+								</a>
+
+								<!-- 
+
+									These are essentially the sub-menu for each swatch 
+									Could be turned off if the action is at the parent level
+
+								-->
+
+								<ul class="project-buttons__subactions list-inline">
+					
+									<li class="project-buttons__subactions-heading">
+										
+										<a href="#" class="">
+											<i class="fa fa-paint-brush"></i>
+											Add to My Project
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-item">
+										
+										<a href="#" class="">
+											Jess's Kitchen Makeover
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-item">
+										
+										<a href="#" class="">
+											Sandi's Lounge Room Reno
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-item">
+										
+										<a href="#" class="">
+											Dan's Lounge Room Title thant goes over many lines
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-heading">
+										
+										<a href="#" class="">
+											<i class="fa fa-plus"></i>
+											Start a new project
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-heading">
+										
+										<a href="#" class="">
+											Compare Product
+										</a>
+
+									</li>
+
+								</ul>
+
+							</li>		
+
+						</ul>		
+
+					</div>
+
+					<span class="product-list__rollover">
+
+						View Product 
+
+						<i class="fa fa-angle-right"></i>
+
+					</span>
+
+				</li>
+				
+				<li class="product-list__single-product">
+					
+
+					<a href="#" class="product-list__link">
+						
+						<img src="/example/product.png" alt="" class="product-list__image">
+
+					</a>
+
+					<a href="#" class="product-list__link">
+						
+						British Paints 4-in-1
+
+					</a>
+
+					<span class="product-list__description">
+						
+						Secondary Text
+
+					</span>
+
+					<div class="project-buttons">
+
+						<ul class="project-buttons__list list-inline">
+							
+							<!-- Using british paints example - swatch that has sub buttons -->
+							<li class="project-buttons__item" style="background-color:$background-color;">
+								
+								<a href="#">
+
+									<i class="fa fa-plus"></i>
+
+								</a>
+
+								<!-- 
+
+									These are essentially the sub-menu for each swatch 
+									Could be turned off if the action is at the parent level
+
+								-->
+
+								<ul class="project-buttons__subactions list-inline">
+					
+									<li class="project-buttons__subactions-heading">
+										
+										<a href="#" class="">
+											<i class="fa fa-paint-brush"></i>
+											Add to My Project
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-item">
+										
+										<a href="#" class="">
+											Jess's Kitchen Makeover
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-item">
+										
+										<a href="#" class="">
+											Sandi's Lounge Room Reno
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-item">
+										
+										<a href="#" class="">
+											Dan's Lounge Room Title thant goes over many lines
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-heading">
+										
+										<a href="#" class="">
+											<i class="fa fa-plus"></i>
+											Start a new project
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-heading">
+										
+										<a href="#" class="">
+											Compare Product
+										</a>
+
+									</li>
+
+								</ul>
+
+							</li>		
+
+						</ul>		
+
+					</div>
+
+					<span class="product-list__rollover">
+
+						View Product 
+
+						<i class="fa fa-angle-right"></i>
+
+					</span>
+
+				</li>
+
+				<li class="product-list__single-product">
+					
+
+					<a href="#" class="product-list__link">
+						
+						<img src="/example/product.png" alt="" class="product-list__image">
+
+					</a>
+
+					<a href="#" class="product-list__link">
+						
+						British Paints 4-in-1
+
+					</a>
+
+					<span class="product-list__description">
+						
+						Secondary Text
+
+					</span>
+
+					<div class="project-buttons">
+
+						<ul class="project-buttons__list list-inline">
+							
+							<!-- Using british paints example - swatch that has sub buttons -->
+							<li class="project-buttons__item" style="background-color:$background-color;">
+								
+								<a href="#">
+
+									<i class="fa fa-plus"></i>
+
+								</a>
+
+								<!-- 
+
+									These are essentially the sub-menu for each swatch 
+									Could be turned off if the action is at the parent level
+
+								-->
+
+								<ul class="project-buttons__subactions list-inline">
+					
+									<li class="project-buttons__subactions-heading">
+										
+										<a href="#" class="">
+											<i class="fa fa-paint-brush"></i>
+											Add to My Project
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-item">
+										
+										<a href="#" class="">
+											Jess's Kitchen Makeover
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-item">
+										
+										<a href="#" class="">
+											Sandi's Lounge Room Reno
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-item">
+										
+										<a href="#" class="">
+											Dan's Lounge Room Title thant goes over many lines
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-heading">
+										
+										<a href="#" class="">
+											<i class="fa fa-plus"></i>
+											Start a new project
+										</a>
+
+									</li>
+
+									<li class="project-buttons__subactions-heading">
+										
+										<a href="#" class="">
+											Compare Product
+										</a>
+
+									</li>
+
+								</ul>
+
+							</li>		
+
+						</ul>		
+
+					</div>
+
+					<span class="product-list__rollover">
+
+						View Product 
+
+						<i class="fa fa-angle-right"></i>
+
+					</span>
+
+				</li>
+
+
+			</ul>
+
+		</div>
+
+	</div> <!-- end Row -->
+
+</div> <!-- end cont. -->
+
+<div class="footer">
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-xs-12 col-md-3">
+				
+				<div class="site__logo site__logo--footer">
+					
+					<a href="#" class="logo__link">
+						<img src="./example/logo.png" alt="">
+					</a>
+
+				</div>
+
+			</div>
+			
+			<div class="col-xs-12 col-md-9">
+
+				<div class="row">
+
+					<div class="col-xs-12 col-md-3">
+				
+						<nav class="navbar navbar--footer">
+
+							<h4 class="navbar--heading">About Us</h4>
+
+							<ul id="$navigation-type" class="nav navbar-nav level-1">
+
+								<li class="active dropdown navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Paint For a Mate</span>
+
+									</a>
+
+								</li>
+
+								<li class="navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Colour Accuracy</span>
+
+									</a>
+
+								</li>
+
+								<li class="navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Contact Us</span>
+
+									</a>
+
+								</li>
+
+								<li class="navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Terms &amp; Conditions</span>
+
+									</a>
+
+								</li>
+
+								<li class="navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Privacy Policy</span>
+
+									</a>
+
+								</li>
+
+							</ul>
+
+						</nav>
+
+					</div>
+
+					<div class="col-xs-12 col-md-3">
+				
+						<nav class="navbar navbar--footer">
+
+							<h4 class="navbar--heading">Products</h4>
+
+							<ul id="$navigation-type" class="nav navbar-nav level-1">
+
+								<li class="active dropdown navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Interior</span>
+
+									</a>
+
+								</li>
+
+								<li class="navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Exterior</span>
+
+									</a>
+
+								</li>
+
+								<li class="navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Concrete &amp; Paving</span>
+
+									</a>
+
+								</li>
+
+								<li class="navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Natural Stone</span>
+
+									</a>
+
+								</li>
+
+								<li class="navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Berger Jet Dry</span>
+
+									</a>
+
+								</li>
+
+							</ul>
+
+						</nav>
+
+					</div>
+
+					<div class="col-xs-12 col-md-3">
+				
+						<nav class="navbar navbar--footer">
+
+							<h4 class="navbar--heading">Colour</h4>
+
+							<ul id="$navigation-type" class="nav navbar-nav level-1">
+
+								<li class="active dropdown navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Colour Chart</span>
+
+									</a>
+
+								</li>
+
+								<li class="navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Colourbond</span>
+
+									</a>
+
+								</li>
+
+								<li class="navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Concrete Colours</span>
+
+									</a>
+
+								</li>
+
+							</ul>
+
+						</nav>
+
+					</div>
+
+					<div class="col-xs-12 col-md-3">
+				
+						<nav class="navbar navbar--footer">
+
+							<h4 class="navbar--heading">How-To</h4>
+
+							<ul id="$navigation-type" class="nav navbar-nav level-1">
+
+								<li class="active dropdown navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Inspiration</span>
+
+									</a>
+
+								</li>
+
+								<li class="navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Paint Calculator</span>
+
+									</a>
+
+								</li>
+
+								<li class="navbar--list-item">
+
+									<!-- Link tag only if link is present in backend -->
+									<a class="menu--link" href="$link">
+
+										<span class="menu--link-text current-parent">Home Team</span>
+
+									</a>
+
+								</li>
+
+							</ul>
+
+						</nav>
+
+					</div>					
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+
+
+<script type="text/javascript" src="/library/build/js/_DG.min.js"></script>
+	
+</body>
+</html>
