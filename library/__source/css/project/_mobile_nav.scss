@@ -1,0 +1,81 @@
+.mobile-nav{
+    font-family: $font-FKG-DC, "arial";
+    width:100%;
+    .site__logo{
+        a{
+           width:100px;
+        }
+        width:160px;
+        float:left;
+        padding-top:15px;
+        padding-left:5px;
+    }
+    .cart-menus{
+        .nav-shopping-cart{
+                background:url('../../../img/cart.png') no-repeat center 5px;
+                display:block;
+                padding-top:35px;
+        }
+        .nav-my-list{
+            padding-top:35px;
+            display:block;
+            background:url('../../../img/my-list.png') no-repeat center 8px;
+        }
+        width:200px;
+        float:right;
+        margin-top:-10px;
+        a{
+            display:inline-block;
+            width:60px;
+            padding-top:10px;
+                color:#000;
+
+        }
+    }
+    .mobile-menu-button{
+        width:70px;
+        background-color:#000;
+        display:inline-block;
+        float:right;
+        height:70px;
+        padding-top:13px;
+        .navbar-toggle {
+            display:block;
+            .icon-bar{
+                background-color:$yellow;
+                width:18px;
+                border-radius:1px;
+                height:3px;
+            }
+        }
+    }
+}
+
+@media (max-width: $screen-xxxxs-max) {
+    .mobile-nav{
+        .cart-menus{
+            width:80px;
+        }                                                       
+    }                                                   
+}
+@media (min-width:$screen-xxxs-min) and (max-width:$screen-xxxs-max){
+    .mobile-nav{
+        .cart-menus{
+            width:80px;
+        }                                                       
+    }  
+}
+@media (min-width:$screen-xxs-min) and (max-width:$screen-xxs-max){
+    .mobile-nav{
+        .cart-menus{
+            width:80px;
+        }                                                       
+    } 
+}
+@media (min-width:$screen-xs-min) and (max-width:$screen-xs-max){
+    .mobile-nav{
+        .cart-menus{
+            width:100px;
+        }                                                       
+    }
+}

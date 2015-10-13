@@ -1,104 +1,93 @@
-
-/* 
-    Created on : 29/09/2015, 11:55:00 AM
-    Author     : Nathan Zhang
-*/
-
-
-.nav-top{
-    font-family: $font-FKG-DC, "arial";
-    font-size: 16px;
-    height:30px;
-    padding:8px 0 28px 0;
-    color:#b3b3b3;
-    z-index:10;
-    background-color:#000000;
-    ul{
-        display:inline-block;
-        float:right;
-        li{
-            float:left;
-            display:inline-block;
-            margin:0px 0px 0px 50px;
-            a{
-                color:#999999;
-            }
-        }
-    }
-}
-
-.mobile-nav{
-    width:100%;
-    .logo{
-        a{
-           width:100%;
-        }
-        padding-top:10px;
-        width:160px;
-        float:left;
-    }
-    .cart-menus{
-        width:200px;
-        float:right;
-        margin-top:-10px;
-        a{
-            display:inline-block;
-            width:60px;
-            padding-top:10px;
-        }
-    }
-    .mobile-menu-button{
-        width:70px;
-        background-color:#000;
-        display:inline-block;
-        float:right;
-
-        .navbar-toggle {
-            display:block;
-            .icon-bar{
-                background-color:$yellow;
-                width:18px;
-                border-radius:1px;
-                height:3px;
-            }
-        }
-    }
-}
-
 .nav-main{
-    font-family: $font-FKG-DC, "arial";
-    padding: 0;
     height:70px;
-    top:36px; 
-    white-space:nowrap;z-index: 10;
-    .nav-main-inline-blocks{
+    top:36px;
+    z-index:10;
+    max-height: 70px;
+    overflow: hidden;
+    white-space:nowrap;
+    padding-right:1170px;
+    .main-nav-inline-item{
         display:inline-block;
-        margin-right:-4px;
-        padding-left: 0;
-        padding-right: 0;
-        .main-nav-row{
-            padding-left:204px;
-            padding-right:144px;
-            width:100%;
-            .logo{
+        width:50%;
+        height:70px;
+        color:#FD0;
+    }
+    
+    .nav-center-container{
+        font-family: $font-FKG-DC, "arial";
+        display:inline-block;
+        padding-left:201px;
+        padding-right:144px;
+        .site__logo{
                 padding-top:5px;
-                margin-left:-204px;
-                width:204px;
-            }
-            .main-nav-center{
-                width:100%;
-            }
-            .cart-menus{
-                width:144px;
-                margin-right: -154px;
-                float:right;
-            }
+                margin-left:-205px;
+                width:201px;
+                display:inline-block;
+                height:70px;
+                padding-top:15px;
         }
+        .main-nav-center{
+            width:100%;
+            display:inline-block;
+            height:70px;
+            padding-top:10px;
+            nav.navbar{
+                display:inline-block;
+                float:left;
+                margin-bottom: 0px !important;
+                min-height: 30px;
+            }
+            .search-form{
+                display:inline-block;
+                float:right;
+                display:inline-block;
+               a#search{
+                @include transition(all 0.5s ease);
+                background:url('../../../img/search_icon.png') no-repeat center 15px;
+                height:40px;
+                margin-right:15px;
+                &:hover{
+                    background:url('../../../img/search_icon.png') no-repeat center 10px;
+                }
+                height:40px;
+                width:27px;
+                display:block;
+                }
+            }
+            
+        }
+        .cart-menus{
+            width:144px;
+            margin-right: -154px;
+            float:right;
+            display:inline-block;
+            height:70px;
+            .text-row{
+                color:#000000;
+                display:block;
+                clear:both;
+                margin-top: 0;
+                margin-bottom: 0;
+                line-height: 95%;
+            }
+            .nav-shopping-cart{
+                background:url('../../../img/cart.png') no-repeat center 5px;
+                display:block;
+                padding-top:35px;
+            }
+            .nav-my-list{
+                padding-top:35px;
+                display:block;
+                background:url('../../../img/my-list.png') no-repeat center 8px;
+            }
+
+        }
+        
         ul li {
             a{
                 font-size:23px;
                 color:#ffffff;
-                @include transition(all 0.5s ease);
+                @include transition(all 0.4s ease);
                 &:hover{
                     color: #6d6d6d;
                 }
@@ -109,110 +98,35 @@
                     color: #6d6d6d;
                 }
             }
-            a#search{
-                @include transition(all 0.5s ease);
-                background:url('../../../img/search_icon.png') no-repeat center 15px;
-                height:40px;
-                margin-right:15px;
-                &:hover{
-                    background:url('../../../img/search_icon.png') no-repeat center 10px;
-                }
-            }
         }
-        .right-cells{
-            height: 70px;
-            margin-top: -10px;
-        }
-        .logo img{
-            width:100%;
-        }
-    }
-    .nav-placeholder{
-        width:50%;
-        background-color: $yellow;
-    }
-    .nav-placeholder-right{
-        width:63%;
     }
 }
-
-.fixed-height{
-        font-family: $font-FKG-DC, "arial";
-        display:inline-block;
-        height:70px;
-        padding-top:10px;
-        padding-left:0;
-        .text-row{
-                color:#000000;
-                display:block;
-                clear:both;
-                margin-top: 0;
-                margin-bottom: 0;
-                line-height: 95%;
-            }
-        .nav-shopping-cart{
-            background:url('../../../img/cart.png') no-repeat center 5px;
-            display:block;
-            padding-top:35px;
-        }
-        .nav-my-list{
-            padding-top:35px;
-            display:block;
-            background:url('../../../img/my-list.png') no-repeat center 8px;
-        }
-    }
-
+/*
 @media (max-width: $screen-xxxxs-max) {
-    .mobile-nav{
-        .cart-menus{
-            width:100px;
-        }                                                       
-    }                                                   
+                                             
 }
 @media (min-width:$screen-xxxs-min) and (max-width:$screen-xxxs-max){
-    .mobile-nav{
-        .cart-menus{
-            width:100px;
-        }                                                       
-    }  
+
 }
 @media (min-width:$screen-xxs-min) and (max-width:$screen-xxs-max){
-    .mobile-nav{
-        .cart-menus{
-            width:100px;
-        }                                                       
-    } 
+
 }
 @media (min-width:$screen-xs-min) and (max-width:$screen-xs-max){
-    .mobile-nav{
-        .cart-menus{
-            width:100px;
-        }                                                       
-    }
-}
+
+}*/
 @media (min-width:$screen-sm-min) and (max-width:$screen-sm-max){
     .nav-main {
         padding-right: 750px;
-        &-inline-blocks{
-            margin-right: -5px;
-        }
     }
 }
 @media (min-width:$screen-md-min) and (max-width:$screen-md-max){
     .nav-main {
         padding-right: 970px;
-        &-inline-blocks{
-            margin-right: -5px;
-        }
+
     }
 }
 @media (min-width:$screen-lg-min){
     .nav-main {
         padding-right: 1170px;
-        &-inline-blocks{
-            margin-right: -5px;
-        }
     }
 }
-
-

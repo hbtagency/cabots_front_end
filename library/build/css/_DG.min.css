@@ -1,9 +1,4 @@
 @charset "UTF-8";
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
 /* 
     Created on : 30/09/2015, 9:19:33 AM
     Author     : Nathan Zhang
@@ -5824,11 +5819,6 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
 /* 
     Created on : 29/09/2015, 11:55:00 AM
     Author     : Nathan Zhang
@@ -5843,18 +5833,30 @@ and open the template in the editor.
   .transparent-bg-darker {
     background-color: rgba(0, 0, 0, 0.6); }
 
+a {
+  cursor: pointer; }
+
+.light-gray {
+  background-color: #e6e6e0; }
+
+.black {
+  background-color: #000; }
+
 .yellow {
   background-color: #ffdd00; }
-
-.hover-white:hover {
-  color: #ffffff; }
 
 .text-yellow {
   color: #ffdd00; }
 
+.uppercase {
+  text-transform: uppercase; }
+
 /***Position*/
 .text-center {
   text-align: center; }
+
+.inline-block {
+  display: inline-block; }
 
 .absolute-position {
   position: absolute; }
@@ -5893,11 +5895,6 @@ and open the template in the editor.
   margin-bottom: 45px; }
 
 /* End of global */
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
 /* 
     Created on : 30/09/2015, 11:54:38 AM
     Author     : Nathan Zhang
@@ -5924,13 +5921,117 @@ body {
 .navbar-nav li a:hover, .navbar-nav li a:focus {
   background-color: transparent; }
 
+.nav-main {
+  height: 70px;
+  top: 36px;
+  z-index: 10;
+  max-height: 70px;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-right: 1170px; }
+  .nav-main .main-nav-inline-item {
+    display: inline-block;
+    width: 50%;
+    height: 70px;
+    color: #FD0; }
+  .nav-main .nav-center-container {
+    font-family: "Conv_FranklinGothic-DemiXCmpr", "arial";
+    display: inline-block;
+    padding-left: 201px;
+    padding-right: 144px; }
+    .nav-main .nav-center-container .site__logo {
+      padding-top: 5px;
+      margin-left: -205px;
+      width: 201px;
+      display: inline-block;
+      height: 70px;
+      padding-top: 15px; }
+    .nav-main .nav-center-container .main-nav-center {
+      width: 100%;
+      display: inline-block;
+      height: 70px;
+      padding-top: 10px; }
+      .nav-main .nav-center-container .main-nav-center nav.navbar {
+        display: inline-block;
+        float: left;
+        margin-bottom: 0px !important;
+        min-height: 30px; }
+      .nav-main .nav-center-container .main-nav-center .search-form {
+        display: inline-block;
+        float: right;
+        display: inline-block; }
+        .nav-main .nav-center-container .main-nav-center .search-form a#search {
+          -webkit-transition: all 0.5s ease;
+          -moz-transition: all 0.5s ease;
+          -o-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+          background: url("../../../img/search_icon.png") no-repeat center 15px;
+          height: 40px;
+          margin-right: 15px;
+          height: 40px;
+          width: 27px;
+          display: block; }
+          .nav-main .nav-center-container .main-nav-center .search-form a#search:hover {
+            background: url("../../../img/search_icon.png") no-repeat center 10px; }
+    .nav-main .nav-center-container .cart-menus {
+      width: 144px;
+      margin-right: -154px;
+      float: right;
+      display: inline-block;
+      height: 70px; }
+      .nav-main .nav-center-container .cart-menus .text-row {
+        color: #000000;
+        display: block;
+        clear: both;
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 95%; }
+      .nav-main .nav-center-container .cart-menus .nav-shopping-cart {
+        background: url("../../../img/cart.png") no-repeat center 5px;
+        display: block;
+        padding-top: 35px; }
+      .nav-main .nav-center-container .cart-menus .nav-my-list {
+        padding-top: 35px;
+        display: block;
+        background: url("../../../img/my-list.png") no-repeat center 8px; }
+    .nav-main .nav-center-container ul li a {
+      font-size: 23px;
+      color: #ffffff;
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      transition: all 0.4s ease; }
+      .nav-main .nav-center-container ul li a:hover {
+        color: #6d6d6d; }
+      .nav-main .nav-center-container ul li a:active {
+        color: #6d6d6d; }
+      .nav-main .nav-center-container ul li a:focus {
+        color: #6d6d6d; }
+
 /*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
+@media (max-width: $screen-xxxxs-max) {
+                                             
+}
+@media (min-width:$screen-xxxs-min) and (max-width:$screen-xxxs-max){
+
+}
+@media (min-width:$screen-xxs-min) and (max-width:$screen-xxs-max){
+
+}
+@media (min-width:$screen-xs-min) and (max-width:$screen-xs-max){
+
+}*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .nav-main {
+    padding-right: 750px; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .nav-main {
+    padding-right: 970px; } }
+@media (min-width: 1200px) {
+  .nav-main {
+    padding-right: 1170px; } }
 /* 
-    Created on : 29/09/2015, 11:55:00 AM
+    Created on : 12/10/2015, 10:07:15 AM
     Author     : Nathan Zhang
 */
 .nav-top {
@@ -5949,29 +6050,52 @@ and open the template in the editor.
       display: inline-block;
       margin: 0px 0px 0px 50px; }
       .nav-top ul li a {
-        color: #999999; }
+        color: #999999;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease; }
+        .nav-top ul li a:hover {
+          color: #6d6d6d; }
+        .nav-top ul li a:active {
+          color: #6d6d6d; }
+        .nav-top ul li a:focus {
+          color: #6d6d6d; }
 
 .mobile-nav {
+  font-family: "Conv_FranklinGothic-DemiXCmpr", "arial";
   width: 100%; }
-  .mobile-nav .logo {
-    padding-top: 10px;
+  .mobile-nav .site__logo {
     width: 160px;
-    float: left; }
-    .mobile-nav .logo a {
-      width: 100%; }
+    float: left;
+    padding-top: 15px;
+    padding-left: 5px; }
+    .mobile-nav .site__logo a {
+      width: 100px; }
   .mobile-nav .cart-menus {
     width: 200px;
     float: right;
     margin-top: -10px; }
+    .mobile-nav .cart-menus .nav-shopping-cart {
+      background: url("../../../img/cart.png") no-repeat center 5px;
+      display: block;
+      padding-top: 35px; }
+    .mobile-nav .cart-menus .nav-my-list {
+      padding-top: 35px;
+      display: block;
+      background: url("../../../img/my-list.png") no-repeat center 8px; }
     .mobile-nav .cart-menus a {
       display: inline-block;
       width: 60px;
-      padding-top: 10px; }
+      padding-top: 10px;
+      color: #000; }
   .mobile-nav .mobile-menu-button {
     width: 70px;
     background-color: #000;
     display: inline-block;
-    float: right; }
+    float: right;
+    height: 70px;
+    padding-top: 13px; }
     .mobile-nav .mobile-menu-button .navbar-toggle {
       display: block; }
       .mobile-nav .mobile-menu-button .navbar-toggle .icon-bar {
@@ -5980,118 +6104,102 @@ and open the template in the editor.
         border-radius: 1px;
         height: 3px; }
 
-.nav-main {
-  font-family: "Conv_FranklinGothic-DemiXCmpr", "arial";
-  padding: 0;
-  height: 70px;
-  top: 36px;
-  white-space: nowrap;
-  z-index: 10; }
-  .nav-main .nav-main-inline-blocks {
-    display: inline-block;
-    margin-right: -4px;
-    padding-left: 0;
-    padding-right: 0; }
-    .nav-main .nav-main-inline-blocks .main-nav-row {
-      padding-left: 204px;
-      padding-right: 144px;
-      width: 100%; }
-      .nav-main .nav-main-inline-blocks .main-nav-row .logo {
-        padding-top: 5px;
-        margin-left: -204px;
-        width: 204px; }
-      .nav-main .nav-main-inline-blocks .main-nav-row .main-nav-center {
-        width: 100%; }
-      .nav-main .nav-main-inline-blocks .main-nav-row .cart-menus {
-        width: 144px;
-        margin-right: -154px;
-        float: right; }
-    .nav-main .nav-main-inline-blocks ul li a {
-      font-size: 23px;
-      color: #ffffff;
-      -webkit-transition: all 0.5s ease;
-      -moz-transition: all 0.5s ease;
-      -o-transition: all 0.5s ease;
-      transition: all 0.5s ease; }
-      .nav-main .nav-main-inline-blocks ul li a:hover {
-        color: #6d6d6d; }
-      .nav-main .nav-main-inline-blocks ul li a:active {
-        color: #6d6d6d; }
-      .nav-main .nav-main-inline-blocks ul li a:focus {
-        color: #6d6d6d; }
-    .nav-main .nav-main-inline-blocks ul li a#search {
-      -webkit-transition: all 0.5s ease;
-      -moz-transition: all 0.5s ease;
-      -o-transition: all 0.5s ease;
-      transition: all 0.5s ease;
-      background: url("../../../img/search_icon.png") no-repeat center 15px;
-      height: 40px;
-      margin-right: 15px; }
-      .nav-main .nav-main-inline-blocks ul li a#search:hover {
-        background: url("../../../img/search_icon.png") no-repeat center 10px; }
-    .nav-main .nav-main-inline-blocks .right-cells {
-      height: 70px;
-      margin-top: -10px; }
-    .nav-main .nav-main-inline-blocks .logo img {
-      width: 100%; }
-  .nav-main .nav-placeholder {
-    width: 50%;
-    background-color: #ffdd00; }
-  .nav-main .nav-placeholder-right {
-    width: 63%; }
-
-.fixed-height {
-  font-family: "Conv_FranklinGothic-DemiXCmpr", "arial";
-  display: inline-block;
-  height: 70px;
-  padding-top: 10px;
-  padding-left: 0; }
-  .fixed-height .text-row {
-    color: #000000;
-    display: block;
-    clear: both;
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 95%; }
-  .fixed-height .nav-shopping-cart {
-    background: url("../../../img/cart.png") no-repeat center 5px;
-    display: block;
-    padding-top: 35px; }
-  .fixed-height .nav-my-list {
-    padding-top: 35px;
-    display: block;
-    background: url("../../../img/my-list.png") no-repeat center 8px; }
-
 @media (max-width: 319px) {
   .mobile-nav .cart-menus {
-    width: 100px; } }
+    width: 80px; } }
 @media (min-width: 320px) and (max-width: 379px) {
   .mobile-nav .cart-menus {
-    width: 100px; } }
+    width: 80px; } }
 @media (min-width: 380px) and (max-width: 519px) {
   .mobile-nav .cart-menus {
-    width: 100px; } }
+    width: 80px; } }
 @media (min-width: 520px) and (max-width: 767px) {
   .mobile-nav .cart-menus {
     width: 100px; } }
-@media (min-width: 768px) and (max-width: 991px) {
-  .nav-main {
-    padding-right: 750px; }
-    .nav-main-inline-blocks {
-      margin-right: -5px; } }
-@media (min-width: 992px) and (max-width: 1199px) {
-  .nav-main {
-    padding-right: 970px; }
-    .nav-main-inline-blocks {
-      margin-right: -5px; } }
-@media (min-width: 1200px) {
-  .nav-main {
-    padding-right: 1170px; }
-    .nav-main-inline-blocks {
-      margin-right: -5px; } }
-/*
-Not sure if we include the bootstrap component styling.
-@import './bower_components/bootstrap-sass/assets/stylesheets/bootstrap/*';
+/* 
+    Created on : 13/10/2015, 9:26:43 AM
+    Author     : Nathan Zhang
 */
+.footer-socials-row {
+  height: 90px;
+  display: block; }
+  .footer-socials-row .footer-socials-container {
+    margin: 0 auto; }
+    .footer-socials-row .footer-socials-container .inline-block {
+      float: left; }
+    .footer-socials-row .footer-socials-container .social-links .inline-block {
+      float: left; }
+    .footer-socials-row .footer-socials-container .social-links .icon {
+      width: 36px;
+      height: 36px;
+      display: block; }
+    .footer-socials-row .footer-socials-container .social-links i.icon-facebook {
+      background: url("../../../img/icons/icon_facebook.png") no-repeat center center; }
+    .footer-socials-row .footer-socials-container .social-links i.icon-youtube {
+      background: url("../../../img/icons/icon_youtube.png") no-repeat center center; }
+    .footer-socials-row .footer-socials-container .woodcare-link .inline-block {
+      float: left; }
+    .footer-socials-row .footer-socials-container .woodcare-link .icon {
+      width: 29px;
+      height: 52px;
+      display: block; }
+    .footer-socials-row .footer-socials-container .woodcare-link .icon-woodcare {
+      background: url("../../../img/icons/icon_woodcare.png") no-repeat center center; }
+
+/* 
+    Created on : 13/10/2015, 10:35:21 AM
+    Author     : Nathan Zhang
+*/
+.footer-bottom-container .row {
+  padding-left: 230px; }
+  .footer-bottom-container .row .site__logo--footer.inline-block {
+    width: 230px;
+    float: left;
+    margin-left: -230px; }
+  .footer-bottom-container .row .footer-right-container {
+    width: 100%; }
+    .footer-bottom-container .row .footer-right-container .navbar {
+      font-family: "franklingothic-medcnd";
+      width: 480px;
+      float: left; }
+      .footer-bottom-container .row .footer-right-container .navbar ul li {
+        width: 25%;
+        margin: 0;
+        padding: 0; }
+        .footer-bottom-container .row .footer-right-container .navbar ul li a {
+          padding: 0;
+          margin: 0;
+          color: #000; }
+    .footer-bottom-container .row .footer-right-container .subscribe-form-container {
+      float: right;
+      font-family: "Conv_FranklinGothic-DemiXCmpr"; }
+      .footer-bottom-container .row .footer-right-container .subscribe-form-container .subscribe-form__text {
+        width: 165px;
+        float: left;
+        font-size: 20px;
+        line-height: 90%; }
+      .footer-bottom-container .row .footer-right-container .subscribe-form-container .input-group {
+        float: right;
+        padding-right: 50px; }
+        .footer-bottom-container .row .footer-right-container .subscribe-form-container .input-group .inline-block {
+          float: left; }
+        .footer-bottom-container .row .footer-right-container .subscribe-form-container .input-group .search-form__btn {
+          padding: 2px 10px;
+          color: white;
+          width: 40px;
+          margin-left: 8px;
+          margin-right: -50px;
+          font-size: 20px;
+          text-align: center;
+          -webkit-transition: all 0.4s ease;
+          -moz-transition: all 0.4s ease;
+          -o-transition: all 0.4s ease;
+          transition: all 0.4s ease; }
+          .footer-bottom-container .row .footer-right-container .subscribe-form-container .input-group .search-form__btn:hover {
+            color: #6d6d6d; }
+          .footer-bottom-container .row .footer-right-container .subscribe-form-container .input-group .search-form__btn:active {
+            color: #6d6d6d; }
+          .footer-bottom-container .row .footer-right-container .subscribe-form-container .input-group .search-form__btn:focus {
+            color: #6d6d6d; }
 
 /*# sourceMappingURL=_DG.min.css.map */

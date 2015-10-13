@@ -5,6 +5,7 @@
 
 /* Color */
 $yellow: #ffdd00;
+$light-gray:#e6e6e0;
 $button-black: #0a0703;
 $dark-transparent-bg:rgba(0, 0, 0, 0.4);
 $darker-transparent-bg:rgba(0, 0, 0, 0.6);
@@ -44,12 +45,16 @@ $font-VSB-B: "venussb bolext";//heading
         background-color:rgba(0, 0, 0, 0.6);
     }
 }
+a{cursor: pointer;}
+.light-gray{background-color:$light-gray}
+.black{background-color:#000;}
 .yellow{background-color:$yellow;}
-.hover-white:hover{color:#ffffff}
 .text-yellow{color:$yellow;}
+.uppercase{text-transform: uppercase;}
 
 /***Position*/
 .text-center{text-align: center;}
+.inline-block{display:inline-block;}
 .absolute-position{position:absolute;}
 .absolute-left{left:0}
 .absolute-right{right:0}

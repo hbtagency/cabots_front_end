@@ -1,0 +1,36 @@
+/* 
+    Created on : 12/10/2015, 10:07:15 AM
+    Author     : Nathan Zhang
+*/
+
+.nav-top{
+    font-family: $font-FKG-DC, "arial";
+    font-size: 16px;
+    height:30px;
+    padding:8px 0 28px 0;
+    color:#b3b3b3;
+    z-index:10;
+    background-color:#000000;
+    ul{
+        display:inline-block;
+        float:right;
+        li{
+            float:left;
+            display:inline-block;
+            margin:0px 0px 0px 50px;
+            a{
+                color:#999999;
+                @include transition(all 0.5s ease);
+                &:hover{
+                    color: #6d6d6d;
+                }
+                &:active{
+                    color: #6d6d6d;
+                }
+                &:focus{
+                    color: #6d6d6d;
+                }
+            }
+        }
+    }
+}

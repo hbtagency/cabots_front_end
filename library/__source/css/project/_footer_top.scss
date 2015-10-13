@@ -1,0 +1,44 @@
+/* 
+    Created on : 13/10/2015, 9:26:43 AM
+    Author     : Nathan Zhang
+*/
+
+.footer-socials-row{
+    height:90px;
+    display:block;
+    .footer-socials-container{
+        margin:0 auto;
+        .inline-block{
+            float:left;
+        }
+        .social-links{
+            .inline-block{
+                float:left;
+            }
+            .icon{
+               width:36px;
+               height:36px;
+               display:block;
+            }
+            i.icon-facebook{
+                background: url('../../../img/icons/icon_facebook.png') no-repeat center center;
+            }
+            i.icon-youtube{
+                background: url('../../../img/icons/icon_youtube.png') no-repeat center center;
+            }
+        }
+        .woodcare-link{
+            .inline-block{
+                float:left;
+            }
+            .icon{
+               width:29px;
+               height:52px;
+               display:block;
+            }
+            .icon-woodcare{
+                background: url('../../../img/icons/icon_woodcare.png') no-repeat center center;
+            }
+        }
+    }
+}
