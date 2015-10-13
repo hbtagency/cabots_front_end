@@ -4,7 +4,11 @@
     Author     : Nathan Zhang
 */
 
-.footer-bottom-container .row{
+.footer-bottom-container {
+    min-height:140px;
+    height:auto;
+    padding-top:30px;
+    .row{
     padding-left:230px;
     .site__logo--footer.inline-block{
         width:230px;
@@ -13,59 +17,165 @@
     }
     .footer-right-container{
         width:100%;
-        .navbar{
-            font-family: $font-FKG-MC;
-            
-            width:480px;
-            float:left;
-            ul li{
-                width:25%;
-                margin: 0;
-                padding:0;
-                a{
+        .footer-right-row{
+            .navbar{
+                font-family: $font-FKG-MC;
+                font-weight: lighter;
+                width:520px;
+                float:left;
+                ul li{
+                    width:25%;
+                    margin: 0;
                     padding:0;
-                    margin:0;
-                    color:#000;
-                }  
+                    a{
+                        padding:0;
+                        margin:0;
+                        color:#000;
+                    }  
+                }
+            }
+            .subscribe-form-container{
+                float:right;
+                font-family: $font-FKG-DC;
+                .subscribe-form__text{
+                    width:141px;
+                    float:left;
+                    font-size:20px;
+                    line-height: 90%;
+                    font-weight: bold;
+                }
+                .input-group{
+                    float:right;
+                    padding-right:53px;
+                    width:250px;
+                    .form-control{
+                        font-family: $font-FKG-MC;
+                        border-radius:0;
+                    }
+                    .inline-block{
+                        float:left;
+                    }
+                    .search-form__btn{
+                        font-family: $font-FKG-MC;
+                        padding:6px 13px;
+                        color:white;
+                        width:43px;
+                        margin-left:8px;
+                        margin-right:-53px;
+                        font-size:16px;
+                        text-align: center;
+                        @include transition(all 0.4s ease);
+                        &:hover{
+                            color: #6d6d6d;
+                        }
+                        &:active{
+                            color: #6d6d6d;
+                        }
+                        &:focus{
+                            color: #6d6d6d;
+                        }
+                    }
+                }
+            }
+            .copy-right{
+                font-family: $font-FKG-MC;
+                font-weight: lighter;
+                color:#000;
             }
         }
-        .subscribe-form-container{
-            float:right;
-            font-family: $font-FKG-DC;
+    }
+}
+}
+.mobile-copyright{
+    height:40px;
+    text-align: center;
+    span{
+        padding-top:10px;
+        color:#fff;
+        font-family: $font-FKG-MC;
 
-            .subscribe-form__text{
-                width:165px;
-                float:left;
-                font-size:20px;
-                line-height: 90%;
-            }
-            .input-group{
-                float:right;
-                padding-right:50px;
-                .inline-block{
-                    float:left;
-                }
-                .search-form__btn{
-                    padding:2px 10px;
-                    color:white;
-                    width:40px;
-                    margin-left:8px;
-                    margin-right:-50px;
-                    font-size:20px;
+    }
+}
+
+
+@media (max-width:$screen-xs-max){
+    .footer-bottom-container {
+    .row{
+    padding-left:0;
+    padding-bottom: 30px;
+    text-align: center;
+    width:auto;
+    .site__logo--footer.inline-block{
+        text-align: center;
+        float:none;
+        margin:0 auto;
+        width:auto;
+        a{
+            margin:0 auto;
+        }
+    }
+    .footer-right-container{
+        width:100%;
+        .footer-right-row{
+            .navbar{
+                width:100%;
+                float:none;
+                ul li{
+                    width:100%;
                     text-align: center;
-                    @include transition(all 0.4s ease);
-                    &:hover{
-                        color: #6d6d6d;
-                    }
-                    &:active{
-                        color: #6d6d6d;
-                    }
-                    &:focus{
-                        color: #6d6d6d;
+                }
+            }
+            .subscribe-form-container{
+                float:none;
+                width:200px;
+                margin:0 auto;
+                text-align: center;
+                .subscribe-form__text{
+                    width:100%;
+                    margin-bottom: 10px;
+                }
+                .input-group{
+                    float:none;
+                    margin:0 auto;
+                    margin-left:-20px;
+                }
+            }
+        }
+    }
+    }
+    }
+}
+@media (min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+    .footer-bottom-container{
+        padding-bottom: 30px;
+
+        .row{
+            .footer-right-container{
+                .footer-right-row{
+                    .subscribe-form-container{
+                        float:left;
                     }
                 }
             }
         }
     }
+}
+@media (min-width:$screen-md-min) and (max-width:$screen-md-max){
+    .footer-bottom-container{
+        padding-bottom: 30px;
+
+        .row{
+            .footer-right-container{
+                .footer-right-row{
+                    .subscribe-form-container{
+                        float:left;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width:$screen-lg-min){
     
 }
+

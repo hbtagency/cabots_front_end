@@ -6121,10 +6121,14 @@ body {
     Author     : Nathan Zhang
 */
 .footer-socials-row {
-  height: 90px;
+  min-height: 90px;
+  height: auto;
   display: block; }
   .footer-socials-row .footer-socials-container {
-    margin: 0 auto; }
+    font-family: "Conv_FranklinGothic-DemiXCmpr";
+    font-size: 27px;
+    margin: 0 auto;
+    padding-top: 30px; }
     .footer-socials-row .footer-socials-container .inline-block {
       float: left; }
     .footer-socials-row .footer-socials-container .social-links .inline-block {
@@ -6137,69 +6141,161 @@ body {
       background: url("../../../img/icons/icon_facebook.png") no-repeat center center; }
     .footer-socials-row .footer-socials-container .social-links i.icon-youtube {
       background: url("../../../img/icons/icon_youtube.png") no-repeat center center; }
-    .footer-socials-row .footer-socials-container .woodcare-link .inline-block {
-      float: left; }
-    .footer-socials-row .footer-socials-container .woodcare-link .icon {
-      width: 29px;
-      height: 52px;
-      display: block; }
-    .footer-socials-row .footer-socials-container .woodcare-link .icon-woodcare {
-      background: url("../../../img/icons/icon_woodcare.png") no-repeat center center; }
+    .footer-socials-row .footer-socials-container .social-links .social-links--list {
+      margin-left: 15px; }
+    .footer-socials-row .footer-socials-container .woodcare-link {
+      margin-left: 15px; }
+      .footer-socials-row .footer-socials-container .woodcare-link .social-links--title {
+        margin-right: 15px; }
+      .footer-socials-row .footer-socials-container .woodcare-link .inline-block {
+        float: left; }
+      .footer-socials-row .footer-socials-container .woodcare-link .icon {
+        width: 29px;
+        height: 52px;
+        display: block; }
+      .footer-socials-row .footer-socials-container .woodcare-link .icon-woodcare {
+        margin-top: -10px;
+        background: url("../../../img/icons/icon_woodcare.png") no-repeat center center; }
 
+@media (max-width: 379px) {
+  .footer-socials-row .footer-socials-container {
+    font-size: 24px;
+    text-align: center; } }
+@media (max-width: 767px) {
+  .footer-socials-row .footer-socials-container {
+    text-align: center; }
+    .footer-socials-row .footer-socials-container .social-links {
+      float: none; }
+    .footer-socials-row .footer-socials-container .woodcare-link {
+      margin-left: 0;
+      float: none; } }
+@media (min-width: 520px) and (max-width: 767px) {
+  .footer-socials-row .footer-socials-container {
+    width: 400px;
+    text-align: center; }
+    .footer-socials-row .footer-socials-container .woodcare-link {
+      padding-top: 0; } }
 /* 
     Created on : 13/10/2015, 10:35:21 AM
     Author     : Nathan Zhang
 */
-.footer-bottom-container .row {
-  padding-left: 230px; }
-  .footer-bottom-container .row .site__logo--footer.inline-block {
-    width: 230px;
-    float: left;
-    margin-left: -230px; }
-  .footer-bottom-container .row .footer-right-container {
-    width: 100%; }
-    .footer-bottom-container .row .footer-right-container .navbar {
-      font-family: "franklingothic-medcnd";
-      width: 480px;
-      float: left; }
-      .footer-bottom-container .row .footer-right-container .navbar ul li {
-        width: 25%;
-        margin: 0;
-        padding: 0; }
-        .footer-bottom-container .row .footer-right-container .navbar ul li a {
-          padding: 0;
+.footer-bottom-container {
+  min-height: 140px;
+  height: auto;
+  padding-top: 30px; }
+  .footer-bottom-container .row {
+    padding-left: 230px; }
+    .footer-bottom-container .row .site__logo--footer.inline-block {
+      width: 230px;
+      float: left;
+      margin-left: -230px; }
+    .footer-bottom-container .row .footer-right-container {
+      width: 100%; }
+      .footer-bottom-container .row .footer-right-container .footer-right-row .navbar {
+        font-family: "franklingothic-medcnd";
+        font-weight: lighter;
+        width: 520px;
+        float: left; }
+        .footer-bottom-container .row .footer-right-container .footer-right-row .navbar ul li {
+          width: 25%;
           margin: 0;
-          color: #000; }
-    .footer-bottom-container .row .footer-right-container .subscribe-form-container {
-      float: right;
-      font-family: "Conv_FranklinGothic-DemiXCmpr"; }
-      .footer-bottom-container .row .footer-right-container .subscribe-form-container .subscribe-form__text {
-        width: 165px;
-        float: left;
-        font-size: 20px;
-        line-height: 90%; }
-      .footer-bottom-container .row .footer-right-container .subscribe-form-container .input-group {
+          padding: 0; }
+          .footer-bottom-container .row .footer-right-container .footer-right-row .navbar ul li a {
+            padding: 0;
+            margin: 0;
+            color: #000; }
+      .footer-bottom-container .row .footer-right-container .footer-right-row .subscribe-form-container {
         float: right;
-        padding-right: 50px; }
-        .footer-bottom-container .row .footer-right-container .subscribe-form-container .input-group .inline-block {
-          float: left; }
-        .footer-bottom-container .row .footer-right-container .subscribe-form-container .input-group .search-form__btn {
-          padding: 2px 10px;
-          color: white;
-          width: 40px;
-          margin-left: 8px;
-          margin-right: -50px;
+        font-family: "Conv_FranklinGothic-DemiXCmpr"; }
+        .footer-bottom-container .row .footer-right-container .footer-right-row .subscribe-form-container .subscribe-form__text {
+          width: 141px;
+          float: left;
           font-size: 20px;
-          text-align: center;
-          -webkit-transition: all 0.4s ease;
-          -moz-transition: all 0.4s ease;
-          -o-transition: all 0.4s ease;
-          transition: all 0.4s ease; }
-          .footer-bottom-container .row .footer-right-container .subscribe-form-container .input-group .search-form__btn:hover {
-            color: #6d6d6d; }
-          .footer-bottom-container .row .footer-right-container .subscribe-form-container .input-group .search-form__btn:active {
-            color: #6d6d6d; }
-          .footer-bottom-container .row .footer-right-container .subscribe-form-container .input-group .search-form__btn:focus {
-            color: #6d6d6d; }
+          line-height: 90%;
+          font-weight: bold; }
+        .footer-bottom-container .row .footer-right-container .footer-right-row .subscribe-form-container .input-group {
+          float: right;
+          padding-right: 53px;
+          width: 250px; }
+          .footer-bottom-container .row .footer-right-container .footer-right-row .subscribe-form-container .input-group .form-control {
+            font-family: "franklingothic-medcnd";
+            border-radius: 0; }
+          .footer-bottom-container .row .footer-right-container .footer-right-row .subscribe-form-container .input-group .inline-block {
+            float: left; }
+          .footer-bottom-container .row .footer-right-container .footer-right-row .subscribe-form-container .input-group .search-form__btn {
+            font-family: "franklingothic-medcnd";
+            padding: 6px 13px;
+            color: white;
+            width: 43px;
+            margin-left: 8px;
+            margin-right: -53px;
+            font-size: 16px;
+            text-align: center;
+            -webkit-transition: all 0.4s ease;
+            -moz-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
+            transition: all 0.4s ease; }
+            .footer-bottom-container .row .footer-right-container .footer-right-row .subscribe-form-container .input-group .search-form__btn:hover {
+              color: #6d6d6d; }
+            .footer-bottom-container .row .footer-right-container .footer-right-row .subscribe-form-container .input-group .search-form__btn:active {
+              color: #6d6d6d; }
+            .footer-bottom-container .row .footer-right-container .footer-right-row .subscribe-form-container .input-group .search-form__btn:focus {
+              color: #6d6d6d; }
+      .footer-bottom-container .row .footer-right-container .footer-right-row .copy-right {
+        font-family: "franklingothic-medcnd";
+        font-weight: lighter;
+        color: #000; }
+
+.mobile-copyright {
+  height: 40px;
+  text-align: center; }
+  .mobile-copyright span {
+    padding-top: 10px;
+    color: #fff;
+    font-family: "franklingothic-medcnd"; }
+
+@media (max-width: 767px) {
+  .footer-bottom-container .row {
+    padding-left: 0;
+    padding-bottom: 30px;
+    text-align: center;
+    width: auto; }
+    .footer-bottom-container .row .site__logo--footer.inline-block {
+      text-align: center;
+      float: none;
+      margin: 0 auto;
+      width: auto; }
+      .footer-bottom-container .row .site__logo--footer.inline-block a {
+        margin: 0 auto; }
+    .footer-bottom-container .row .footer-right-container {
+      width: 100%; }
+      .footer-bottom-container .row .footer-right-container .footer-right-row .navbar {
+        width: 100%;
+        float: none; }
+        .footer-bottom-container .row .footer-right-container .footer-right-row .navbar ul li {
+          width: 100%;
+          text-align: center; }
+      .footer-bottom-container .row .footer-right-container .footer-right-row .subscribe-form-container {
+        float: none;
+        width: 200px;
+        margin: 0 auto;
+        text-align: center; }
+        .footer-bottom-container .row .footer-right-container .footer-right-row .subscribe-form-container .subscribe-form__text {
+          width: 100%;
+          margin-bottom: 10px; }
+        .footer-bottom-container .row .footer-right-container .footer-right-row .subscribe-form-container .input-group {
+          float: none;
+          margin: 0 auto;
+          margin-left: -20px; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer-bottom-container {
+    padding-bottom: 30px; }
+    .footer-bottom-container .row .footer-right-container .footer-right-row .subscribe-form-container {
+      float: left; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .footer-bottom-container {
+    padding-bottom: 30px; }
+    .footer-bottom-container .row .footer-right-container .footer-right-row .subscribe-form-container {
+      float: left; } }
 
 /*# sourceMappingURL=_DG.min.css.map */

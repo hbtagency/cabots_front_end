@@ -15,100 +15,126 @@
 
 <body>
     <header>
-          <div id="body-mask" class="body-mask absolute-position full-width transparent-bg"></div>
           <!-- Begin of top nav -->
           <div class="nav-top hidden-sm hidden-xs absolute-position full-width">
               <div class="container">
                   <div class="row">
-                      <ul class="top-nav">
+                    <!-- #Components Navigation -->
+                    <nav class="navbar top-nav">
+                      <ul>
                           <li><a href='#'>SUPPORT</a></li>
                           <li><a href='#'>BLOG</a></li>
                           <li><a href='#'>STORE LOCATOR</a></li>
                       </ul>
+                    </nav>
+                    <!-- End of #component navigation -->
                   </div>
               </div>
           </div>
           <!-- End of top nav -->
           <!-- Begining of main nav -->
           <div class="nav-main transparent-bg-darker absolute-position full-width hidden-xs hidden-sm">
-                  <div class="fixed-height yellow nav-main-inline-blocks nav-placeholder"></div>
-                  <div class="container nav-main-inline-blocks">
-                    <div class="main-nav-row clearfix">
-                      <div class="fixed-height logo yellow">
-                           <a href="../" class="navbar-brand">
-                               <img class="img-responsive" src='img/logo.png' alt="Cabots"/>
-                           </a> 
-                      </div>
+                <div class="fluid-yellow-block yellow main-nav-inline-item "></div>
+                <div class="container nav-center-container">
+                      <!-- #Components Logo -->
+                      <div class="fixed-height yellow site__logo">
+                            <a href="#" class="logo__link">
+                                <img class="img-responsive" src='img/logo.png' alt="Cabots">
+                            </a>
+                      </div>  
+                      <!-- End of #Components logo -->   
                       <div class="fixed-height main-nav-center">
-                            <nav class="collapse navbar-collapse bs-navbar-collapse">
-                              <ul class="nav navbar-nav navbar-left">
-                                <li>
-                                  <a href="#">PRODUCT</a>
-                                </li>
-                                <li>
-                                  <a href="#">COLOR</a>
-                                </li>
-                                <li class="active">
-                                  <a href="#">PROJECT HUB</a>
-                                </li>
-                                <li>
-                                  <a href="#">HOW TO VIDEOS</a>
-                                </li>
-                              </ul>
-                              <ul class="nav navbar-nav navbar-right">
-                                <li>
-                                    <a href="#" id="search" class="pull-right">
+                            <!-- #Components Navigation -->
+                            <nav class="navbar">
+                                <ul id="$navigation-type" class="nav navbar-nav level-1">
+                                    <li class="active dropdown navbar--list-item">
+                                    <!-- Link tag only if link is present in backend -->
+                                    <a class="dropdown-toggle menu--link" href="$link">
+                                            <span class="menu--link-text current-parent">Project</span>
                                     </a>
-                                </li>
-                              </ul> 
+                                    </li>
+                                    <li class="active dropdown navbar--list-item">
+                                    <!-- Link tag only if link is present in backend -->
+                                    <a class="dropdown-toggle menu--link" href="$link">
+                                            <span class="menu--link-text current-parent">Color</span>
+                                    </a>
+                                    </li>
+                                    <li class="active dropdown navbar--list-item">
+                                    <!-- Link tag only if link is present in backend -->
+                                    <a class="dropdown-toggle menu--link" href="$link">
+                                            <span class="menu--link-text current-parent">Project Hub</span>
+                                    </a>
+                                    </li>
+                                    <li class="active dropdown navbar--list-item">
+                                    <!-- Link tag only if link is present in backend -->
+                                    <a class="dropdown-toggle menu--link" href="$link">
+                                            <span class="menu--link-text current-parent">Inspiration</span>
+                                    </a>
+                                    </li>
+                                    <li class="active dropdown navbar--list-item">
+                                    <!-- Link tag only if link is present in backend -->
+                                    <a class="dropdown-toggle menu--link" href="$link">
+                                            <span class="menu--link-text current-parent">How to videos</span>
+                                    </a>
+                                    </li>
+                                </ul>
                             </nav>
+                            <!-- End of #component navigation -->
+                            <!-- #Components Search Form -->
+                            <div class="fixed-height search-form pull-right">
+                                    <a href="#" id="search">
+                                    </a>
+                                    <!--<i class="fa fa-search"></i>-->
+                                    <div class="input-group search-form__wrapper hidden">
+                                            <input class="form-control search-form__input" type="text" />
+                                            <span class="search-form__btn-wrap">
+                                            <button class="search-form__btn searchform__btn--default" type="button">Search</button>
+                                            </span>
+                                    </div>
+                            </div>
+                            <!-- End of #component search form -->
                      </div>
                         
                     <div class="fixed-height cart-menus yellow">
+                        <!-- Customized #Component my_cart -->
                         <a href="#" class="pull-left nav-cart-button text-center half-width right-cells" >
                             <span class="clearfix nav-shopping-cart">
                                 <span class="text-row">(0)SAMPLES</span>
                                 <span class="text-row">$0.0</span>
                             </span>
                         </a>
-                        <a href="#" id="nav-mylist" class="pull-right nav-menu-button text-center half-width clearfix right-cells" >
+                        <!-- Customized #Component my_list -->
+                        <a href="#" id="nav-mylist" class="pull-right nav-menu-button text-center half-width clearfix right-cells">
                             <span class="clearfix nav-my-list">
                                 <span class="text-row">MY LIST</span>
                             </span>    
                         </a>
                     </div>
-                    <!--
-                    <div class="navbar-header visible-sm visible-md">
-                        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-                          <span class="sr-only">Toggle navigation</span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    -->
-                    </div>
-                  </div>
-                  <div class="fixed-height yellow nav-main-inline-blocks nav-placeholder nav-placeholder-right">
-                      
-                  </div>
-                  
+
+                </div>
+                <div class="fluid-yellow-block yellow main-nav-inline-item "></div>
           </div>
           <!-- End of main nav -->
           
           <!-- Begin of pad and mobile menu -->
           <div class="full-width mobile-nav yellow visible-xs visible-sm clearfix">
-                      <div class="fixed-height logo yellow clearfix">
-                           <a href="../" class="navbar-brand">
-                               <img class="img-responsive" src='img/logo.png' alt="Cabots"/>
-                           </a> 
+                      <!-- Logo #component -->
+                      <div class="fixed-height yellow site__logo">
+                            <a href="#" class="logo__link">
+                                <img class="img-responsive" src='img/logo.png' alt="Cabots">
+                            </a>
                       </div>
-                      <div class="fixed-height  cart-menus yellow clearfix">
+                      <!-- End of Logo #component -->
+                      
+                      
+                      <div class="fixed-height cart-menus yellow clearfix">
+                        <!-- Customized #Component my_cart -->
                         <a href="#" class="hidden-xs nav-cart-button text-center" >
                             <span class="clearfix nav-shopping-cart">
                                 <span class="text-row">$0.0</span>
                             </span>
                         </a>
+                        <!-- Customized #Component my_list -->
                         <a href="#" id="nav-mylist" class="hidden-xs nav-menu-button text-center clearfix" >
                             <span class="clearfix nav-my-list">
                                 <span class="text-row">MY LIST</span>
@@ -123,58 +149,141 @@
                             </button> 
                         </div>
                       </div>
-              
           </div>
           <!-- End of pad and mobile menu -->
-          
       </header>
-<div class="container" id="pagewrapper">
+    
+    <div class='container' style="height:600px;">
+        <br><br><br><br><br>
+        <h1>Fake content</h1>
+    </div>
+    <footer>
+        <div class="light-gray footer-socials-row">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="footer-socials-container inline-block">
+                        <!-- #Components Socials -->
+                        <div class="social-links inline-block">
+                            <span class="title social-links--title uppercase inline-block">
+                                    CONNECT WITH US	
+                            </span>
+                            <ul class="list-inline social-links--list inline-block">
+                                    <li class="social-links--list-item">
+                                            <a class="social-links--link" href="/">
+                                                    <i class="icon icon-facebook"></i>	
+                                            </a>
+                                    </li>
+                                    <li class="social-links--list-item">
+                                            <a class="social-links--link" href="/">
+                                                    <i class="icon icon-youtube"></i>	
+                                            </a>
+                                    </li>
+                            </ul>
+                        </div>
 
-   <header role="banner">
-      <h1>{sitename}</h1> <!-- Site name from Global Settings -->
-   </header>
-
-   <nav role="navigation">
-      {menu} <!-- Show all the menu buttons -->
-   </nav>
-
-   <section id="breadcrumbs">
-      {cms_breadcrumbs} <!-- Show breadcrumbs pagelinks -->
-   </section>
-
-   <aside>
-      {content block=second_content label='My second content block'} <!-- Create a second content block -->
-      </aside>
-
-   <article>
-      {news} <!-- News article links -->
-   </article>
-
-   <section id="content">
-      <h2>{title}</h2> <!-- Title of the page -->
-      <article role="main">
-         {content} <!-- Page content -->
-      </article>
-   </section>
-
-   <footer>
-      {global_content name='footer'} <!-- Extract all footer code to a global content block -->
+                        <!-- #Components Cabot's App -->
+                        <div class="woodcare-link inline-block">
+                            <span class="title social-links--title inline-block uppercase">
+                                    DOWNLOAD THE CABOT'S WOODCAREAPP	
+                            </span>
+                            <span class='inline-block'>
+                                <a class="social-links--link" href="/">
+                                    <i class="icon icon-woodcare"></i>	
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='yellow clearfix'>
+            <div class="container footer-bottom-container">
+                <div class="row">
+                    <!-- #Components Logo -->
+                    <div class="fixed-height yellow site__logo--footer inline-block">
+                          <a href="#" class="logo__link">
+                              <img class="img-responsive" src='img/logo.png' alt="Cabots">
+                          </a>
+                    </div>
+                    <!-- #Components Navigation -->
+                    <div class="footer-right-container inline-block">
+                        <div class="footer-right-row clearfix">
+                        <nav class="navbar inline-block">
+                                <ul id="$navigation-type" class="nav navbar-nav level-1">
+                                    <li class="active dropdown navbar--list-item">
+                                        <!-- Link tag only if link is present in backend -->
+                                        <a class="dropdown-toggle menu--link" href="$link">					
+                                            <span class="menu--link-text current-parent">About Cabot's</span>
+                                        </a>
+                                    </li>
+                                    <li class="active dropdown navbar--list-item">
+                                        <!-- Link tag only if link is present in backend -->
+                                        <a class="dropdown-toggle menu--link" href="$link">					
+                                            <span class="menu--link-text current-parent">Contact Us</span>
+                                        </a>
+                                    </li>
+                                    <li class="active dropdown navbar--list-item">
+                                        <!-- Link tag only if link is present in backend -->
+                                        <a class="dropdown-toggle menu--link" href="$link">					
+                                            <span class="menu--link-text current-parent">Privacy</span>
+                                        </a>
+                                    </li>
+                                    <li class="active dropdown navbar--list-item">
+                                        <!-- Link tag only if link is present in backend -->
+                                        <a class="dropdown-toggle menu--link" href="$link">					
+                                            <span class="menu--link-text current-parent">Colour Accuracy</span>
+                                        </a>
+                                    </li>
+                                    <li class="active dropdown navbar--list-item">
+                                        <!-- Link tag only if link is present in backend -->
+                                        <a class="dropdown-toggle menu--link" href="$link">					
+                                            <span class="menu--link-text current-parent">Investor Information</span>
+                                        </a>
+                                    </li>
+                                    <li class="active dropdown navbar--list-item">
+                                        <!-- Link tag only if link is present in backend -->
+                                        <a class="dropdown-toggle menu--link" href="$link">					
+                                            <span class="menu--link-text current-parent">Architects & Specifiers</span>
+                                        </a>
+                                    </li>
+                                    <li class="active dropdown navbar--list-item">
+                                        <!-- Link tag only if link is present in backend -->
+                                        <a class="dropdown-toggle menu--link" href="$link">					
+                                            <span class="menu--link-text current-parent">MSDS Safety</span>
+                                        </a>
+                                    </li>
+                                    <li class="active dropdown navbar--list-item">
+                                        <!-- Link tag only if link is present in backend -->
+                                        <a class="dropdown-toggle menu--link" href="$link">					
+                                            <span class="menu--link-text current-parent">Terms & Conditions</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                        </nav>
+                        <!-- #component Subscribe form  -->
+                        <div class="subscribe-form-container inline-block">
+                                <span class="subscribe-form__text inline-block uppercase">SUBSCRIBE TO RECEIVE DEALS & THE LATEST NEWS</span>	
+                                <div class="input-group inline-block">
+                                    <input class="form-control subscribe-form__input inline-block" type="text" placeholder='Enter email address...'/>		
+                                    <a class="search-form__btn subscribe__btn--default black inline-block">GO</a>
+                                </div>
+                        </div>
+                        </div>
+                        <div class="footer-right-row visible-lg hidden-md">
+                            <span class="copy-right">© 2015 Cabot’s Privacy Policy Corporate Info Site Terms Site Map </span>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="mobile-copyright black visible-md visible-sm visible-xs">
+            <span class="inline-block">
+                © 2015 Cabot’s
+            </span>
+        </div>
    </footer>
 
-</div>
-<div class="greyFooter">
-	<div class="col-md-3">
-	</div>
-	<div class="col-md-3">
-		CONNECT WITH US
-	</div>
-	<div class="col-md-6">
-		DOWNLOAD THE CABOT’S WOODCARE APP
-	</div>
-</div>
-<div class="footer">
-	
-</div>
+
 </body>
 
 </html>
