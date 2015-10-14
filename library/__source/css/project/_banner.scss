@@ -1,0 +1,39 @@
+.banner-img{
+    height:320px;
+    width:100%;
+    background-size:cover;
+    position:relative;
+    .container{
+        position:relative;
+        height:320px;
+        span.caption{
+            position: absolute;
+            bottom:15px;
+            left:15px;
+            h1{
+                font-size:60px;
+                color:#fff;
+                font-family: $font-VSB-B,"arial";
+                font-weight: bolder;
+
+            }
+        }
+    }
+}
+
+@media (max-width:$screen-xs-max){
+    .banner-img{
+        height:220px;
+        .container{
+            height:220px;
+            span.caption{
+                position: absolute;
+                bottom:15px;
+                left:15px;
+                h1{
+                    font-size:30px;
+                }
+            }
+        }
+    }
+}

@@ -63,12 +63,18 @@ a{cursor: pointer;}
 .full-width{width:100%}
 .half-width{width:50%}
 
-.mg-tp-15{margin-top: 15px;}
-.mg-tp-30{margin-top: 30px;}
-.mg-tp-45{margin-top: 45px;}
-
-.mg-bt-15{margin-bottom: 15px;}
-.mg-bt-30{margin-bottom: 30px;}
-.mg-bt-45{margin-bottom: 45px;}
+/* Button */
+.button{
+    font-family: $font-FKG-DC;
+    padding:10px;
+    color:white;
+    display:block;
+    text-align: center;
+}
 /* End of global */
 
+body
+{
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+}

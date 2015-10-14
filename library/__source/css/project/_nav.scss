@@ -19,12 +19,11 @@
         padding-left:201px;
         padding-right:144px;
         .site__logo{
-                padding-top:5px;
                 margin-left:-205px;
                 width:201px;
                 display:inline-block;
                 height:70px;
-                padding-top:15px;
+                padding-top:18px;
         }
         .main-nav-center{
             width:100%;
@@ -32,10 +31,21 @@
             height:70px;
             padding-top:10px;
             nav.navbar{
+                width:90%;
                 display:inline-block;
                 float:left;
                 margin-bottom: 0px !important;
                 min-height: 30px;
+                ul{
+                    width:100%;
+                    li{
+                        width:18%;
+                        text-align: center;
+                        &:hover{
+                            background: black;
+                        }
+                    }
+                }
             }
             .search-form{
                 display:inline-block;
@@ -74,11 +84,14 @@
                 background:url('../../../img/cart.png') no-repeat center 5px;
                 display:block;
                 padding-top:35px;
+                font-size:16px;
             }
             .nav-my-list{
                 padding-top:35px;
                 display:block;
                 background:url('../../../img/my-list.png') no-repeat center 8px;
+                font-size:16px;
+
             }
 
         }

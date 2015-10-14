@@ -1,6 +1,9 @@
 .mobile-nav{
     font-family: $font-FKG-DC, "arial";
     width:100%;
+    position:absolute;
+    top:0;
+    z-index:10;
     .site__logo{
         a{
            width:100px;

@@ -5876,25 +5876,19 @@ a {
 .half-width {
   width: 50%; }
 
-.mg-tp-15 {
-  margin-top: 15px; }
-
-.mg-tp-30 {
-  margin-top: 30px; }
-
-.mg-tp-45 {
-  margin-top: 45px; }
-
-.mg-bt-15 {
-  margin-bottom: 15px; }
-
-.mg-bt-30 {
-  margin-bottom: 30px; }
-
-.mg-bt-45 {
-  margin-bottom: 45px; }
+/* Button */
+.button {
+  font-family: "Conv_FranklinGothic-DemiXCmpr";
+  padding: 10px;
+  color: white;
+  display: block;
+  text-align: center; }
 
 /* End of global */
+body {
+  overflow-y: scroll !important;
+  overflow-x: hidden !important; }
+
 /* 
     Created on : 30/09/2015, 11:54:38 AM
     Author     : Nathan Zhang
@@ -5940,22 +5934,29 @@ body {
     padding-left: 201px;
     padding-right: 144px; }
     .nav-main .nav-center-container .site__logo {
-      padding-top: 5px;
       margin-left: -205px;
       width: 201px;
       display: inline-block;
       height: 70px;
-      padding-top: 15px; }
+      padding-top: 18px; }
     .nav-main .nav-center-container .main-nav-center {
       width: 100%;
       display: inline-block;
       height: 70px;
       padding-top: 10px; }
       .nav-main .nav-center-container .main-nav-center nav.navbar {
+        width: 90%;
         display: inline-block;
         float: left;
         margin-bottom: 0px !important;
         min-height: 30px; }
+        .nav-main .nav-center-container .main-nav-center nav.navbar ul {
+          width: 100%; }
+          .nav-main .nav-center-container .main-nav-center nav.navbar ul li {
+            width: 18%;
+            text-align: center; }
+            .nav-main .nav-center-container .main-nav-center nav.navbar ul li:hover {
+              background: black; }
       .nav-main .nav-center-container .main-nav-center .search-form {
         display: inline-block;
         float: right;
@@ -5989,11 +5990,13 @@ body {
       .nav-main .nav-center-container .cart-menus .nav-shopping-cart {
         background: url("../../../img/cart.png") no-repeat center 5px;
         display: block;
-        padding-top: 35px; }
+        padding-top: 35px;
+        font-size: 16px; }
       .nav-main .nav-center-container .cart-menus .nav-my-list {
         padding-top: 35px;
         display: block;
-        background: url("../../../img/my-list.png") no-repeat center 8px; }
+        background: url("../../../img/my-list.png") no-repeat center 8px;
+        font-size: 16px; }
     .nav-main .nav-center-container ul li a {
       font-size: 23px;
       color: #ffffff;
@@ -6035,8 +6038,9 @@ body {
     Author     : Nathan Zhang
 */
 .nav-top {
+  top: 0;
   font-family: "Conv_FranklinGothic-DemiXCmpr", "arial";
-  font-size: 16px;
+  font-size: 17px;
   height: 30px;
   padding: 8px 0 28px 0;
   color: #b3b3b3;
@@ -6064,7 +6068,10 @@ body {
 
 .mobile-nav {
   font-family: "Conv_FranklinGothic-DemiXCmpr", "arial";
-  width: 100%; }
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 10; }
   .mobile-nav .site__logo {
     width: 160px;
     float: left;
@@ -6188,7 +6195,8 @@ body {
     .footer-bottom-container .row .site__logo--footer.inline-block {
       width: 230px;
       float: left;
-      margin-left: -230px; }
+      margin-left: -230px;
+      margin-top: 6px; }
     .footer-bottom-container .row .footer-right-container {
       width: 100%; }
       .footer-bottom-container .row .footer-right-container .footer-right-row .navbar {
@@ -6211,8 +6219,7 @@ body {
           width: 141px;
           float: left;
           font-size: 20px;
-          line-height: 90%;
-          font-weight: bold; }
+          line-height: 90%; }
         .footer-bottom-container .row .footer-right-container .footer-right-row .subscribe-form-container .input-group {
           float: right;
           padding-right: 53px;
@@ -6297,5 +6304,297 @@ body {
     padding-bottom: 30px; }
     .footer-bottom-container .row .footer-right-container .footer-right-row .subscribe-form-container {
       float: left; } }
+.banner-img {
+  height: 320px;
+  width: 100%;
+  background-size: cover;
+  position: relative; }
+  .banner-img .container {
+    position: relative;
+    height: 320px; }
+    .banner-img .container span.caption {
+      position: absolute;
+      bottom: 15px;
+      left: 15px; }
+      .banner-img .container span.caption h1 {
+        font-size: 60px;
+        color: #fff;
+        font-family: "venussb bolext", "arial";
+        font-weight: bolder; }
+
+@media (max-width: 767px) {
+  .banner-img {
+    height: 220px; }
+    .banner-img .container {
+      height: 220px; }
+      .banner-img .container span.caption {
+        position: absolute;
+        bottom: 15px;
+        left: 15px; }
+        .banner-img .container span.caption h1 {
+          font-size: 30px; } }
+/* Home Page */
+/* 
+    Created on : 14/10/2015, 11:41:02 AM
+    Author     : Nathan Zhang
+*/
+/* carousel */
+#myCarousel .carousel-inner .item {
+  height: 600px; }
+  #myCarousel .carousel-inner .item .carousel-caption {
+    margin-bottom: 100px;
+    text-align: center; }
+    #myCarousel .carousel-inner .item .carousel-caption h1 {
+      font-size: 71px;
+      font-weight: bolder; }
+    #myCarousel .carousel-inner .item .carousel-caption a.button {
+      margin: 0 auto;
+      width: 230px;
+      text-align: center;
+      font-size: 23px;
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      transition: all 0.4s ease; }
+      #myCarousel .carousel-inner .item .carousel-caption a.button:hover {
+        color: #e6e6e0; }
+#myCarousel .carousel-indicators li {
+  border: 1px solid #ffdd00;
+  border-radius: 0; }
+
+@media (max-width: 519px) {
+  #myCarousel .carousel-inner .item {
+    height: 300px; }
+    #myCarousel .carousel-inner .item .carousel-caption {
+      margin-bottom: 30px; }
+      #myCarousel .carousel-inner .item .carousel-caption h1 {
+        font-size: 35px;
+        font-weight: bolder; }
+      #myCarousel .carousel-inner .item .carousel-caption a.button {
+        width: 190px;
+        font-size: 18px; } }
+/* 
+    Created on : 14/10/2015, 1:56:43 PM
+    Author     : Nathan Zhang
+*/
+.square {
+  float: left;
+  position: relative;
+  width: 24%;
+  padding-bottom: 24%;
+  /* = width for a 1:1 aspect ratio */
+  margin: 1%;
+  background-color: #1E1E1E;
+  overflow: hidden;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
+  .square .content {
+    position: absolute;
+    height: 90%;
+    /* = 100% - 2*5% padding */
+    width: 90%;
+    /* = 100% - 2*5% padding */
+    padding: 5%; }
+
+.rectangle {
+  float: left;
+  position: relative;
+  width: 47%;
+  padding-bottom: 24%;
+  /* = width for a 1:1 aspect ratio */
+  margin-top: 1%;
+  margin-right: 0.5%;
+  margin-bottom: 1%;
+  margin-left: 0.5%;
+  background-color: #1E1E1E;
+  overflow: hidden;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
+  .rectangle .content {
+    position: absolute;
+    height: 90%;
+    /* = 100% - 2*5% padding */
+    width: 90%;
+    /* = 100% - 2*5% padding */
+    padding: 5%; }
+
+.quicklinks {
+  padding: 15px; }
+  .quicklinks .rectangle {
+    float: left;
+    position: relative;
+    width: 49%;
+    padding-bottom: 25%;
+    /* = width for a 1:1 aspect ratio */
+    margin-top: 1%;
+    margin-right: 0.5%;
+    margin-bottom: 1%;
+    margin-left: 0.5%;
+    background-color: #1E1E1E;
+    overflow: hidden;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
+    .quicklinks .rectangle .content {
+      position: absolute;
+      height: 95%;
+      /* = 100% - 2*5% padding */
+      width: 95%;
+      /* = 100% - 2*5% padding */
+      padding: 2.5%; }
+
+@media (max-width: 767px) {
+  .square {
+    float: left;
+    position: relative;
+    width: 49%;
+    padding-bottom: 49%;
+    /* = width for a 1:1 aspect ratio */
+    margin: 0.5%;
+    background-color: #1E1E1E;
+    overflow: hidden; }
+    .square .content {
+      position: absolute;
+      height: 95%;
+      /* = 100% - 2*5% padding */
+      width: 95%;
+      /* = 100% - 2*5% padding */
+      padding: 0; }
+
+  .rectangle {
+    float: left;
+    position: relative;
+    width: 99%;
+    padding-bottom: 49%;
+    /* = width for a 1:1 aspect ratio */
+    margin-top: 0.5%;
+    margin-right: 0.5%;
+    margin-bottom: 0.5%;
+    margin-left: 0.5%;
+    background-color: #1E1E1E;
+    overflow: hidden; }
+    .rectangle .content {
+      position: absolute;
+      height: 95%;
+      /* = 100% - 2*5% padding */
+      width: 95%;
+      /* = 100% - 2*5% padding */
+      padding: 0; } }
+/* 
+    Created on : 14/10/2015, 2:48:20 PM
+    Author     : yfzha_000
+*/
+.colour-confidence-container {
+  height: 142px;
+  margin-top: 70px;
+  display: block;
+  position: relative;
+  text-align: center; }
+  .colour-confidence-container img.left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1; }
+  .colour-confidence-container .caption {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    padding-top: 5px; }
+    .colour-confidence-container .caption .relative-container {
+      position: relative;
+      display: inline-block; }
+      .colour-confidence-container .caption .relative-container h1 {
+        font-family: "venussb bolext", "arial";
+        color: #000;
+        font-size: 74px;
+        font-weight: bold;
+        display: inline-block; }
+      .colour-confidence-container .caption .relative-container .cut-in-button {
+        padding: 10px 10px 0 10px;
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+        top: -20px;
+        width: 150px;
+        text-align: center; }
+        .colour-confidence-container .caption .relative-container .cut-in-button a {
+          -webkit-transition: all 0.5s ease;
+          -moz-transition: all 0.5s ease;
+          -o-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+          font-family: "Conv_FranklinGothic-DemiXCmpr", "arial";
+          font-size: 17px;
+          color: #000;
+          display: inline-block; }
+          .colour-confidence-container .caption .relative-container .cut-in-button a:hover {
+            color: #494949; }
+
+@media (max-width: 767px) {
+  .colour-confidence-container {
+    height: 92px;
+    margin-top: 30px; }
+    .colour-confidence-container img.left {
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      width: 40%; }
+    .colour-confidence-container .caption {
+      padding-top: 0px;
+      bottom: 3px; }
+      .colour-confidence-container .caption .relative-container h1 {
+        font-size: 54px; }
+      .colour-confidence-container .caption .relative-container .cut-in-button {
+        width: 100px; } }
+@media (max-width: 519px) {
+  .colour-confidence-container {
+    height: 72px;
+    margin-top: 30px; }
+    .colour-confidence-container img.left {
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      width: 50%;
+      left: -100px; }
+    .colour-confidence-container .caption {
+      padding-top: 0px; }
+      .colour-confidence-container .caption .relative-container h1 {
+        font-size: 32px;
+        margin-bottom: 15px; }
+      .colour-confidence-container .caption .relative-container .cut-in-button {
+        width: 100px; } }
+@media (max-width: 379px) {
+  .colour-confidence-container img.left {
+    width: 70%;
+    left: -100px; }
+  .colour-confidence-container .caption .relative-container h1 {
+    font-size: 28px; } }
+/* 
+    Created on : 14/10/2015, 4:13:20 PM
+    Author     : Nathan Zhang
+*/
+.quicklink-full-width-container {
+  position: relative; }
+  .quicklink-full-width-container .woodcare-chat {
+    padding: 10px;
+    padding-left: 20px;
+    font-family: "Conv_FranklinGothic-DemiXCmpr";
+    font-size: 22px;
+    color: #fff;
+    width: 210px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: url("../../../img/icons/woodcare_chat.png") no-repeat 145px 8px;
+    background-color: black; }
 
 /*# sourceMappingURL=_DG.min.css.map */

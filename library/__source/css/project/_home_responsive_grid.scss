@@ -1,0 +1,107 @@
+/* 
+    Created on : 14/10/2015, 1:56:43 PM
+    Author     : Nathan Zhang
+*/
+
+
+.square {
+    float:left;
+    position: relative;
+    width: 24%;
+    padding-bottom : 24%; /* = width for a 1:1 aspect ratio */
+    margin:1%;
+    background-color:#1E1E1E;
+    overflow:hidden;
+    @include transition(all 0.4s ease);
+
+    .content {
+        position:absolute;
+        height:90%; /* = 100% - 2*5% padding */
+        width:90%; /* = 100% - 2*5% padding */
+        padding: 5%;
+    }
+}
+
+.rectangle {
+    float:left;
+    position: relative;
+    width: 47%;
+    padding-bottom : 24%; /* = width for a 1:1 aspect ratio */
+    margin-top:1%;
+    margin-right:0.5%;
+    margin-bottom: 1%;
+    margin-left:0.5%;
+    background-color:#1E1E1E;
+    overflow:hidden;
+    @include transition(all 0.4s ease);
+
+    .content {
+        position:absolute;
+        height:90%; /* = 100% - 2*5% padding */
+        width:90%; /* = 100% - 2*5% padding */
+        padding: 5%;
+    }
+}
+
+.quicklinks
+{
+    padding:15px;
+    .rectangle {
+        float:left;
+        position: relative;
+        width: 49%;
+        padding-bottom : 25%; /* = width for a 1:1 aspect ratio */
+        margin-top:1%;
+        margin-right:0.5%;
+        margin-bottom: 1%;
+        margin-left:0.5%;
+        background-color:#1E1E1E;
+        overflow:hidden;
+        @include transition(all 0.4s ease);
+
+        .content {
+            position:absolute;
+            height:95%; /* = 100% - 2*5% padding */
+            width:95%; /* = 100% - 2*5% padding */
+            padding: 2.5%;
+        }
+    }
+}
+
+@media (max-width:$screen-xs-max){
+    .square {
+        float:left;
+        position: relative;
+        width: 49%;
+        padding-bottom : 49%; /* = width for a 1:1 aspect ratio */
+        margin:0.5%;
+        background-color:#1E1E1E;
+        overflow:hidden;
+        .content {
+            position:absolute;
+            height:95%; /* = 100% - 2*5% padding */
+            width:95%; /* = 100% - 2*5% padding */
+            padding: 0;
+        }
+    }
+
+    .rectangle {
+        float:left;
+        position: relative;
+        width: 99%;
+        padding-bottom : 49%; /* = width for a 1:1 aspect ratio */
+        margin-top:0.5%;
+        margin-right:0.5%;
+        margin-bottom: 0.5%;
+        margin-left:0.5%;
+
+        background-color:#1E1E1E;
+        overflow:hidden;
+        .content {
+            position:absolute;
+            height:95%; /* = 100% - 2*5% padding */
+            width:95%; /* = 100% - 2*5% padding */
+            padding: 0;
+        }
+    }
+}

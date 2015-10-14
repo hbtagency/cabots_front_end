@@ -1,0 +1,22 @@
+/* 
+    Created on : 14/10/2015, 4:13:20 PM
+    Author     : Nathan Zhang
+*/
+.quicklink-full-width-container{
+    position:relative;
+    .woodcare-chat{
+        padding:10px;
+        padding-left:20px;
+        font-family: $font-FKG-DC;
+        font-size:22px;
+        color:#fff;
+        width:210px;
+        display: inline-block;
+        position: absolute;
+        right:0;
+        bottom:0;
+        background:url('../../../img/icons/woodcare_chat.png') no-repeat 145px 8px;
+        background-color:black;
+    }
+}
+
