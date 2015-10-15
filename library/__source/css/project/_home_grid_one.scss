@@ -1,0 +1,98 @@
+
+/* 
+    Created on : 14/10/2015, 11:41:02 AM
+    Author     : Nathan Zhang
+*/
+
+/* carousel */
+#myCarousel2 {
+    position:relative;
+    width:100%;
+    padding-bottom: 100%;
+    .carousel-indicators{
+        top:42%;
+    }
+    .carousel-inner{
+        .item{
+            .grid-one-button{
+                position: absolute;
+                top:0;
+                width:100%;
+                @include transition(all 0.4s ease);
+                font-size:17px;
+                &:hover{
+                    color:$yellow;
+                }
+            }
+            .mask{
+                top:400px;
+                position:absolute;
+                @include transition(all 0.8s ease);
+                &.active{
+                }
+            }
+            padding-bottom:100%;
+            text-align:center;
+            .carousel-button{
+                text-align:center;
+                display:inline-block;
+                position:absolute;
+                left:50%;
+                margin-left:-40px;
+                top:48.5%;
+                margin-top:-43px;
+                z-index: 1000;
+                a.button{
+                    display:inline-block;
+                    margin:0 auto;
+                    text-align:center;
+                    
+                    @include transition(all 0.4s ease);
+                    img{
+                        display:block;
+                        width:80px;
+                        &.hide{
+                            display:none;
+                        }
+                    }
+                    &:hover{
+
+                    }
+                }
+            }
+        }
+    }
+    .carousel-indicators li{
+        border:1px solid $yellow;
+        border-radius:0;
+    }
+}
+
+
+@media (max-width:$screen-xxs-max){
+
+    #myCarousel2 {
+        position:relative;
+        width:100%;
+        padding-bottom: 100%;
+        .carousel-indicators{
+        }
+        .carousel-inner{
+            .item{
+                .carousel-button{
+                    margin-left:-25px;
+                    margin-top:-25px;
+                    a.button{
+                        @include transition(all 0.4s ease);
+                        img{
+                            width:40px;
+                        }
+                        &:hover{
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
