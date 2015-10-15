@@ -6392,11 +6392,10 @@ body {
   transition: all 0.4s ease; }
   .square .content {
     position: absolute;
-    height: 90%;
+    height: 100%;
     /* = 100% - 2*5% padding */
-    width: 90%;
-    /* = 100% - 2*5% padding */
-    padding: 5%; }
+    width: 100%;
+    /* = 100% - 2*5% padding */ }
 
 .rectangle {
   float: left;
@@ -6416,11 +6415,10 @@ body {
   transition: all 0.4s ease; }
   .rectangle .content {
     position: absolute;
-    height: 90%;
+    height: 100%;
     /* = 100% - 2*5% padding */
-    width: 90%;
-    /* = 100% - 2*5% padding */
-    padding: 5%; }
+    width: 100%;
+    /* = 100% - 2*5% padding */ }
 
 .quicklinks {
   padding: 15px; }
@@ -6442,11 +6440,10 @@ body {
     transition: all 0.4s ease; }
     .quicklinks .rectangle .content {
       position: absolute;
-      height: 95%;
+      height: 100%;
       /* = 100% - 2*5% padding */
-      width: 95%;
-      /* = 100% - 2*5% padding */
-      padding: 2.5%; }
+      width: 100%;
+      /* = 100% - 2*5% padding */ }
 
 @media (max-width: 767px) {
   .square {
@@ -6460,11 +6457,10 @@ body {
     overflow: hidden; }
     .square .content {
       position: absolute;
-      height: 95%;
+      height: 100%;
       /* = 100% - 2*5% padding */
-      width: 95%;
-      /* = 100% - 2*5% padding */
-      padding: 0; }
+      width: 100%;
+      /* = 100% - 2*5% padding */ }
 
   .rectangle {
     float: left;
@@ -6480,11 +6476,10 @@ body {
     overflow: hidden; }
     .rectangle .content {
       position: absolute;
-      height: 95%;
+      height: 100%;
       /* = 100% - 2*5% padding */
-      width: 95%;
-      /* = 100% - 2*5% padding */
-      padding: 0; } }
+      width: 100%;
+      /* = 100% - 2*5% padding */ } }
 /* 
     Created on : 14/10/2015, 2:48:20 PM
     Author     : yfzha_000
@@ -6596,5 +6591,99 @@ body {
     bottom: 0;
     background: url("../../../img/icons/woodcare_chat.png") no-repeat 145px 8px;
     background-color: black; }
+
+/* 
+    Created on : 14/10/2015, 11:41:02 AM
+    Author     : Nathan Zhang
+*/
+/* carousel */
+#myCarousel2 {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%; }
+  #myCarousel2 .carousel-indicators {
+    top: 42%; }
+  #myCarousel2 .carousel-inner .item {
+    padding-bottom: 100%;
+    text-align: center; }
+    #myCarousel2 .carousel-inner .item .grid-one-button {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+      font-size: 17px; }
+      #myCarousel2 .carousel-inner .item .grid-one-button:hover {
+        color: #ffdd00; }
+    #myCarousel2 .carousel-inner .item .mask {
+      top: 400px;
+      position: absolute;
+      -webkit-transition: all 0.8s ease;
+      -moz-transition: all 0.8s ease;
+      -o-transition: all 0.8s ease;
+      transition: all 0.8s ease; }
+    #myCarousel2 .carousel-inner .item .carousel-button {
+      text-align: center;
+      display: inline-block;
+      position: absolute;
+      left: 50%;
+      margin-left: -40px;
+      top: 48.5%;
+      margin-top: -43px;
+      z-index: 1000; }
+      #myCarousel2 .carousel-inner .item .carousel-button a.button {
+        display: inline-block;
+        margin: 0 auto;
+        text-align: center;
+        -webkit-transition: all 0.4s ease;
+        -moz-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        transition: all 0.4s ease; }
+        #myCarousel2 .carousel-inner .item .carousel-button a.button img {
+          display: block;
+          width: 80px; }
+          #myCarousel2 .carousel-inner .item .carousel-button a.button img.hide {
+            display: none; }
+  #myCarousel2 .carousel-indicators li {
+    border: 1px solid #ffdd00;
+    border-radius: 0; }
+
+@media (max-width: 519px) {
+  #myCarousel2 {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; }
+    #myCarousel2 .carousel-inner .item .carousel-button {
+      margin-left: -25px;
+      margin-top: -25px; }
+      #myCarousel2 .carousel-inner .item .carousel-button a.button {
+        -webkit-transition: all 0.4s ease;
+        -moz-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        transition: all 0.4s ease; }
+        #myCarousel2 .carousel-inner .item .carousel-button a.button img {
+          width: 40px; } }
+/* 
+    Created on : 14/10/2015, 1:56:43 PM
+    Author     : Nathan Zhang
+*/
+#myCarousel3 {
+  position: relative;
+  padding-bottom: 100%; }
+  #myCarousel3 .carousel-control {
+    height: 100px;
+    background-image: none;
+    background-color: #fff;
+    top: 25%;
+    margin-top: -50px;
+    color: #000; }
+  #myCarousel3 .carousel-inner .item {
+    width: 100%;
+    padding-bottom: 100%; }
+  #myCarousel3 .carousel-indicators li {
+    border: 1px solid #ffdd00;
+    border-radius: 0; }
 
 /*# sourceMappingURL=_DG.min.css.map */

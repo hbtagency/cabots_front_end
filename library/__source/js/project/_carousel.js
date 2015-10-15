@@ -4,7 +4,5 @@
  * and open the template in the editor.
  */
 $(function(){
-    $('.carousel').carousel({
-      interval: 4000
-    });
+    $('.carousel').each(function(){ $(this).carousel({ interval: 3000 }); }); 
 });

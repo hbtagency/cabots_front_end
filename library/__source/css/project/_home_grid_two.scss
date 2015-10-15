@@ -1,0 +1,31 @@
+/* 
+    Created on : 14/10/2015, 1:56:43 PM
+    Author     : Nathan Zhang
+*/
+
+#myCarousel3 {
+    position:relative;
+    padding-bottom:100%;
+    .carousel-control{
+        height:100px;
+        background-image:none;
+        background-color:#fff;
+        top:25%;
+        margin-top:-50px;
+        color:#000;
+    }
+    .carousel-inner{
+        .item{
+            width:100%;
+            padding-bottom:100%;
+        }
+    }
+    .carousel-indicators li{
+        border:1px solid $yellow;
+        border-radius:0;
+    }
+}
+
+@media (max-width:$screen-xxs-max){
+    
+}
