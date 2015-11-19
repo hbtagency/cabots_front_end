@@ -14,6 +14,8 @@ $(window).load(function () {
 
 
     $(".mask-trigger").hover( function () {
+        
+        /*
         $(this).parent().siblings('.mask').css('top', '0px');
         $(this).children('img').each(function(){
             if($(this).hasClass('hide')){
@@ -22,7 +24,8 @@ $(window).load(function () {
                 $(this).addClass('hide')
 
             }
-        });
+        });*/
+        a
     });
     $(".mask-trigger").mouseleave(function () {
         $(this).parent().siblings('.mask').css('top', '400px');
