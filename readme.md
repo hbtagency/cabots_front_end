@@ -1,14 +1,3 @@
-## Author: Daniel Riddell
-## Author URI: dan@24digital.com.au
-## Version: 1.1
-## Last Edited: 28/09/15
-
-
-/--------/--------/--------/
-
-## 		Getting started
-
-/--------/--------/--------/
 
 1. Open terminal, and jump into the root of this project
 
